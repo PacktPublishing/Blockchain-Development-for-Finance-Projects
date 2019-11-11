@@ -1,0 +1,146 @@
+{
+          this.props.BView == 1?
+			  
+        <div className="panel-block">
+            <div className="panel-block is-paddingless is-12" >					
+                <div>
+                    {
+                        props.verfile.map((f,index) => {
+							
+							var splitString = f.file.split("/"); 
+    						var reverseArray = splitString.reverse();
+							
+                            return (
+								<div className="panel-block is-multiline">
+								<div className="column">
+								 <div className={f.status == 'Tampered' ? "has-background-danger" : "has-background-white"}> 
+                                <div key={index} className="columns token">
+                                		<div className="column">
+										<strong>FileName </strong> 
+								         : {reverseArray[0]}    
+										</div>
+										<div className="column">
+										<strong> Path</strong> 
+								         : {f.file}
+                                    </div>
+									<div className="column">
+										<strong>Status </strong> 
+								         : {f.status}
+                                    </div>
+									</div>
+									</div>
+                                    </div>
+									</div>									
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        </div>:
+
+		this.props.BView == 2?
+			  
+        <div className="panel-block">
+            <div className="panel-block is-paddingless is-12" >					
+                <div>
+                    {
+                        props.addFile.map((file,index) => {
+							
+							var splitString =  file.split("/"); 
+    						var reverseArray = splitString.reverse();
+							
+                            return (
+								<div className="panel-block is-multiline">
+								<div className="column">
+								        <div key={index} className="columns token">
+                                		<div className="column">
+										<strong>FileName </strong> 
+								         : {reverseArray[0]}    
+										</div>
+										<div className="column">
+										<strong> Path</strong> 
+								         : {file}
+                                    </div>
+									</div>
+									</div>
+									</div>									
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        </div>:	
+
+		this.props.BView == 3?
+			  
+        <div className="panel-block">
+            <div className="panel-block is-paddingless is-12" >					
+                <div>
+                    {
+                        props.remFile.map((file,index) => {
+							
+							var splitString =  file.split("/"); 
+    						var reverseArray = splitString.reverse();
+							
+                            return (
+								<div className="panel-block is-multiline">
+								<div className="column">
+								        <div key={index} className="columns token">
+                                		<div className="column">
+										<strong>FileName </strong> 
+								         : {reverseArray[0]}    
+										</div>
+										<div className="column">
+										<strong> Path</strong> 
+								         : {file}
+                                    </div>
+									</div>
+									</div>
+									</div>									
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        </div>:	
+
+			  
+        <div className="panel-block">
+            <div className="panel-block is-paddingless is-12" >					
+                <div>
+                    {
+                        props.verfile.map((f,index) => {
+							
+							var splitString = f.file.split("/"); 
+    						var reverseArray = splitString.reverse();
+							
+                            return (
+								<div className="panel-block is-multiline">
+								<div className="column">
+								 <div className={f.status == 'Not Tampered' ? "is-hidden" : 
+												"has-background-white" }> 
+                                <div key={index} className="columns token">
+                                		<div className="column">
+										<strong>FileName </strong> 
+								         : {reverseArray[0]}    
+										</div>
+										<div className="column">
+										<strong> Path</strong> 
+								         : {f.file}
+                                    </div>
+									<div className="column">
+										<strong>Status </strong> 
+								         : {f.status}
+                                    </div>
+									</div>
+									</div>
+                                    </div>
+									</div>									
+                            )
+                        })
+                    }
+					
+					
+					  </div>
+            </div>
+        </div>
