@@ -1,0 +1,30 @@
+external_port = 8003
+internal_port = 8004
+# Set this to `true` if you need to check the information of a person receiving
+# a payment you are sending (if false, only the sender will be checked). For
+# more information, see the callbacks section below.
+needs_auth = false
+network_passphrase = "Test SDF Network ; September 2015"
+
+[database]
+type = "postgres"
+url = "postgres://bank1:bank1@localhost/compliancea?sslmode=disable"
+
+
+[keys]
+# This should be the secret seed for your base account (or another account that
+# can authorize transactions from your base account).
+signing_seed = "SAV75E2NK7Q5JZZLBBBNUPCIAKABN64HNHMDLD62SZWM6EBJ4R7CUNTZ"
+encryption_key = "SAV75E2NK7Q5JZZLBBBNUPCIAKABN64HNHMDLD62SZWM6EBJ4R7CUNTZ"
+
+[callbacks]
+sanctions = "http://localhost:8005/compliance/sanctions"
+ask_user = "http://localhost:8005/compliance/ask_user"
+fetch_info = "http://localhost:8005/compliance/fetch_info"
+
+# The compliance server must be available via HTTPS. Specify your SSL
+# certificate and key here. If the server is behind a proxy or load  balancer
+# that implements HTTPS, you can omit this section.
+[tls]
+certificate_file = "server.crt"
+private_key_file = "server.key"

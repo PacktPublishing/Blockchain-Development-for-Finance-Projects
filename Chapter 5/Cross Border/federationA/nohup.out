@@ -1,0 +1,14 @@
+time="2019-10-04T19:39:33+05:30" level=info msg="starting federation server - v0.2.1" pid=5901 
+time="2019-10-04T19:39:33+05:30" level=info msg="listening on 0.0.0.0:8001" pid=5901 
+time="2019-10-05T01:17:27+05:30" level=info msg="starting federation server - v0.2.1" pid=4648 
+time="2019-10-05T01:17:27+05:30" level=info msg="listening on 0.0.0.0:8001" pid=4648 
+time="2019-10-05T10:05:27+05:30" level=info msg="starting federation server - v0.2.1" pid=5813 
+time="2019-10-05T10:05:27+05:30" level=info msg="listening on 0.0.0.0:8001" pid=5813 
+time="2019-10-05T11:18:57+05:30" level=info msg="starting federation server - v0.2.1" pid=5921 
+time="2019-10-05T11:18:57+05:30" level=info msg="listening on 0.0.0.0:8001" pid=5921 
+time="2019-10-05T12:18:07+05:30" level=info msg="starting request" host="banka.com:8001" ip="127.0.0.1:40166" method=GET path="/federation?q=ishanroy%2Abanka.com&type=name" pid=5921 subsys=http 
+time="2019-10-05T12:18:07+05:30" level=info msg="finished request" bytes=149 duration=297.047432ms pid=5921 status=200 subsys=http 
+time="2019-10-05T12:20:17+05:30" level=info msg="starting request" host="banka.com:8001" ip="127.0.0.1:42048" method=GET path="/federation?q=ishanroy%2Abanka.com&type=name" pid=5921 subsys=http 
+time="2019-10-05T12:20:17+05:30" level=info msg="finished request" bytes=149 duration=1.284487ms pid=5921 status=200 subsys=http 
+time="2019-10-05T13:41:51+05:30" level=info msg="starting federation server - v0.2.1" pid=4835 
+time="2019-10-05T13:41:51+05:30" level=info msg="listening on 0.0.0.0:8001" pid=4835 

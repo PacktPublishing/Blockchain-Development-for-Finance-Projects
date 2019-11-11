@@ -1,0 +1,5 @@
+time="2019-10-04T19:43:15+05:30" level=info msg="Starting external server on :8003" 
+time="2019-10-04T19:43:15+05:30" level=info msg="Starting internal server on :8004" 
+time="2019-10-04T20:49:27+05:30" level=error msg="Error sending request to fetch_info server" err="Post http://localhost:5000/compliance/fetch_info: dial tcp 127.0.0.1:5000: getsockopt: connection refused" fetch_info="http://localhost:5000/compliance/fetch_info" 
+time="2019-10-05T13:42:21+05:30" level=info msg="Starting external server on :8003" 
+time="2019-10-05T13:42:21+05:30" level=info msg="Starting internal server on :8004" 

@@ -1,0 +1,4 @@
+port = 8002
+horizon = "http://localhost:8000"
+network_passphrase = "Standalone Network ; February 2017"
+compliance = "https://banka.com:8002"

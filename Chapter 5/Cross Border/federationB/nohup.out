@@ -1,0 +1,92 @@
+time="2019-10-04T19:40:31+05:30" level=info msg="starting federation server - v0.2.1" pid=5922 
+time="2019-10-04T19:40:31+05:30" level=info msg="listening on 0.0.0.0:8002" pid=5922 
+time="2019-10-04T20:47:19+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:55468" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T20:47:20+05:30" level=info msg="finished request" bytes=149 duration=414.487151ms pid=5922 status=200 subsys=http 
+time="2019-10-04T20:47:56+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:55468" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T20:47:56+05:30" level=info msg="finished request" bytes=149 duration=737.14µs pid=5922 status=200 subsys=http 
+time="2019-10-04T20:48:18+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:55468" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T20:48:18+05:30" level=info msg="finished request" bytes=149 duration=738.97µs pid=5922 status=200 subsys=http 
+time="2019-10-04T20:49:27+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:55468" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T20:49:27+05:30" level=info msg="finished request" bytes=149 duration=942.888µs pid=5922 status=200 subsys=http 
+time="2019-10-04T20:53:22+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:60738" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T20:53:22+05:30" level=info msg="finished request" bytes=149 duration=689.708µs pid=5922 status=200 subsys=http 
+time="2019-10-04T20:54:46+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:60738" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T20:54:46+05:30" level=info msg="finished request" bytes=149 duration=895.993µs pid=5922 status=200 subsys=http 
+time="2019-10-04T21:23:05+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:58230" method=GET path="/federation?q=ishan%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T21:23:06+05:30" level=info msg="finished request" bytes=50 duration=106.370762ms pid=5922 status=404 subsys=http 
+time="2019-10-04T21:25:25+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:60252" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T21:25:25+05:30" level=info msg="finished request" bytes=149 duration=18.059151ms pid=5922 status=200 subsys=http 
+time="2019-10-04T22:29:10+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:58536" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T22:29:10+05:30" level=info msg="finished request" bytes=149 duration=28.068288ms pid=5922 status=200 subsys=http 
+time="2019-10-04T22:30:22+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:58536" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T22:30:22+05:30" level=info msg="finished request" bytes=149 duration=1.211767ms pid=5922 status=200 subsys=http 
+time="2019-10-04T22:37:27+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:37492" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T22:37:27+05:30" level=info msg="finished request" bytes=149 duration=1.188572ms pid=5922 status=200 subsys=http 
+time="2019-10-04T23:30:21+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:55522" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T23:30:22+05:30" level=info msg="finished request" bytes=149 duration=1.816864ms pid=5922 status=200 subsys=http 
+time="2019-10-04T23:35:44+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:60204" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T23:35:44+05:30" level=info msg="finished request" bytes=149 duration=992.003µs pid=5922 status=200 subsys=http 
+time="2019-10-04T23:40:40+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:36288" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T23:40:40+05:30" level=info msg="finished request" bytes=149 duration=1.238751ms pid=5922 status=200 subsys=http 
+time="2019-10-04T23:43:45+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:38998" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-04T23:43:45+05:30" level=info msg="finished request" bytes=149 duration=752.043µs pid=5922 status=200 subsys=http 
+time="2019-10-05T00:02:49+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:55540" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-05T00:02:49+05:30" level=info msg="finished request" bytes=149 duration=1.680391ms pid=5922 status=200 subsys=http 
+time="2019-10-05T00:03:31+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:55540" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-05T00:03:31+05:30" level=info msg="finished request" bytes=149 duration=641.04µs pid=5922 status=200 subsys=http 
+time="2019-10-05T00:12:39+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:35778" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-05T00:12:39+05:30" level=info msg="finished request" bytes=149 duration=88.957422ms pid=5922 status=200 subsys=http 
+time="2019-10-05T00:42:20+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:33070" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-05T00:42:20+05:30" level=info msg="finished request" bytes=149 duration=982.158µs pid=5922 status=200 subsys=http 
+time="2019-10-05T00:43:39+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:33070" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-05T00:43:39+05:30" level=info msg="finished request" bytes=149 duration=934.569µs pid=5922 status=200 subsys=http 
+time="2019-10-05T00:48:33+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:38508" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5922 subsys=http 
+time="2019-10-05T00:48:33+05:30" level=info msg="finished request" bytes=149 duration=745.407µs pid=5922 status=200 subsys=http 
+time="2019-10-05T01:19:24+05:30" level=info msg="starting federation server - v0.2.1" pid=4732 
+time="2019-10-05T01:19:24+05:30" level=info msg="listening on 0.0.0.0:8002" pid=4732 
+time="2019-10-05T01:28:59+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:44088" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4732 subsys=http 
+time="2019-10-05T01:29:00+05:30" level=info msg="finished request" bytes=149 duration=302.569868ms pid=4732 status=200 subsys=http 
+time="2019-10-05T01:32:36+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:47238" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4732 subsys=http 
+time="2019-10-05T01:32:36+05:30" level=info msg="finished request" bytes=149 duration=622.256µs pid=4732 status=200 subsys=http 
+time="2019-10-05T01:33:20+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:47238" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4732 subsys=http 
+time="2019-10-05T01:33:20+05:30" level=info msg="finished request" bytes=149 duration=825.54µs pid=4732 status=200 subsys=http 
+time="2019-10-05T10:06:10+05:30" level=info msg="starting federation server - v0.2.1" pid=5842 
+time="2019-10-05T10:06:10+05:30" level=info msg="listening on 0.0.0.0:8002" pid=5842 
+time="2019-10-05T10:28:34+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:59688" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5842 subsys=http 
+time="2019-10-05T10:28:34+05:30" level=info msg="finished request" bytes=149 duration=2.122367ms pid=5842 status=200 subsys=http 
+time="2019-10-05T11:19:07+05:30" level=info msg="starting federation server - v0.2.1" pid=5934 
+time="2019-10-05T11:19:07+05:30" level=info msg="listening on 0.0.0.0:8002" pid=5934 
+time="2019-10-05T11:25:16+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:40438" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5934 subsys=http 
+time="2019-10-05T11:25:16+05:30" level=info msg="finished request" bytes=149 duration=391.1401ms pid=5934 status=200 subsys=http 
+time="2019-10-05T11:38:03+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:51442" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5934 subsys=http 
+time="2019-10-05T11:38:03+05:30" level=info msg="finished request" bytes=149 duration=846.691µs pid=5934 status=200 subsys=http 
+time="2019-10-05T11:40:20+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:53418" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5934 subsys=http 
+time="2019-10-05T11:40:21+05:30" level=info msg="finished request" bytes=149 duration=65.719396ms pid=5934 status=200 subsys=http 
+time="2019-10-05T11:41:30+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:53418" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5934 subsys=http 
+time="2019-10-05T11:41:30+05:30" level=info msg="finished request" bytes=149 duration=624.213µs pid=5934 status=200 subsys=http 
+time="2019-10-05T11:48:57+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:60872" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5934 subsys=http 
+time="2019-10-05T11:48:57+05:30" level=info msg="finished request" bytes=149 duration=648.08µs pid=5934 status=200 subsys=http 
+time="2019-10-05T11:54:39+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:37650" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5934 subsys=http 
+time="2019-10-05T11:54:39+05:30" level=info msg="finished request" bytes=149 duration=1.128333ms pid=5934 status=200 subsys=http 
+time="2019-10-05T12:56:20+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:34290" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=5934 subsys=http 
+time="2019-10-05T12:56:20+05:30" level=info msg="finished request" bytes=149 duration=132.164598ms pid=5934 status=200 subsys=http 
+time="2019-10-05T13:42:04+05:30" level=info msg="starting federation server - v0.2.1" pid=4851 
+time="2019-10-05T13:42:04+05:30" level=info msg="listening on 0.0.0.0:8002" pid=4851 
+time="2019-10-05T13:49:29+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:43024" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4851 subsys=http 
+time="2019-10-05T13:49:30+05:30" level=info msg="finished request" bytes=149 duration=299.899338ms pid=4851 status=200 subsys=http 
+time="2019-10-05T13:54:29+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:47424" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4851 subsys=http 
+time="2019-10-05T13:54:29+05:30" level=info msg="finished request" bytes=149 duration=994.218µs pid=4851 status=200 subsys=http 
+time="2019-10-05T13:56:53+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:49542" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4851 subsys=http 
+time="2019-10-05T13:56:53+05:30" level=info msg="finished request" bytes=149 duration=670.18µs pid=4851 status=200 subsys=http 
+time="2019-10-05T13:57:40+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:49542" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4851 subsys=http 
+time="2019-10-05T13:57:40+05:30" level=info msg="finished request" bytes=149 duration=908.564µs pid=4851 status=200 subsys=http 
+time="2019-10-05T13:58:55+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:49542" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4851 subsys=http 
+time="2019-10-05T13:58:55+05:30" level=info msg="finished request" bytes=149 duration=849.52µs pid=4851 status=200 subsys=http 
+time="2019-10-05T14:00:41+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:52226" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4851 subsys=http 
+time="2019-10-05T14:00:41+05:30" level=info msg="finished request" bytes=149 duration=652.388µs pid=4851 status=200 subsys=http 
+time="2019-10-05T14:10:47+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:56290" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4851 subsys=http 
+time="2019-10-05T14:10:47+05:30" level=info msg="finished request" bytes=149 duration=667.616µs pid=4851 status=200 subsys=http 
+time="2019-10-05T15:18:35+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:56360" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4851 subsys=http 
+time="2019-10-05T15:18:35+05:30" level=info msg="finished request" bytes=149 duration=1.131632ms pid=4851 status=200 subsys=http 
+time="2019-10-05T15:20:14+05:30" level=info msg="starting request" host="bankb.com:8002" ip="127.0.0.1:57108" method=GET path="/federation?q=ishanroy%2Abankb.com&type=name" pid=4851 subsys=http 
+time="2019-10-05T15:20:14+05:30" level=info msg="finished request" bytes=149 duration=737.387µs pid=4851 status=200 subsys=http 

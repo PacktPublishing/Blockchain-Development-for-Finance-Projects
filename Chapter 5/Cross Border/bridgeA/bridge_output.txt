@@ -1,0 +1,11 @@
+request { amount: '100.0000000',
+  asset_code: 'USD',
+  asset_issuer: 'GBG6EOY27PUU7OAV2F7NXZEP66O7SEZ4O6SHPT66ETXQPXX7NIKURUSO',
+  data: '',
+  from: 'GASODFGZ7UWDDRH2FHTTALCT7FA3YAKJVSPXXFNDEZUWDR27FFWLG6VO',
+  id: '3195455672321',
+  memo: '',
+  memo_type: 'none',
+  route: '',
+  transaction_id:
+   '96fccb779aead01b20337ed8cb8ba11a8404732fa5aaa05db7ad061531c275f7' }
