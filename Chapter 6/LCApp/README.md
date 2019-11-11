@@ -1,1 +1,0 @@
-![Easy Way To Transfer ERC20 Tokens](https://s3.amazonaws.com/alofe.oluwafemi/tz.png)
