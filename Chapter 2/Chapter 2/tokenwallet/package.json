@@ -1,0 +1,18 @@
+{
+  "name": "token-wallet",
+  "version": "1.0.0",
+  "private": false,
+  "dependencies": {
+    "bulma-start": "0.0.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4",
+    "web3": "^1.0.0-beta.52"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
