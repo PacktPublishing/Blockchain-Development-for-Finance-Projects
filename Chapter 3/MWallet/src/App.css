@@ -1,0 +1,42 @@
+img.meta-trademark {
+    width: 20%;
+}
+
+#item-lists {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#item-lists div.shoe:nth-child(even) {
+    background: #f5f5f5;
+}
+
+#item-lists div.shoe {
+    cursor: pointer;
+}
+
+.sortby {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.item-logo {
+    width: 10px;
+    height: 10px;
+}
+
+.item-image {
+    width: 100px;
+    height: 100px;
+}
+.download-metamask {
+    height: 30%;
+    cursor: pointer;
+    width: 70%;
+    margin: auto;
+}
+
+.is-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
