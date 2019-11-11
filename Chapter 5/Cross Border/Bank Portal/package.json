@@ -1,0 +1,21 @@
+{
+  "name": "cross-border-app",
+  "version": "1.0.0",
+  "private": false,
+  "dependencies": {
+    "bulma-start": "0.0.2",
+    "concat-stream": "^2.0.0",
+    "fs": "0.0.1-security",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4",
+    "stellar-sdk": "^3.0.0",
+    "toml": "^3.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
