@@ -4,11 +4,6 @@ import Description from './Components/Description';
 import Container from './Components/Container';
 
 
-var concat = require('concat-stream');
-var fs = require('fs');
-const requestObj = require('request');
-
-
 
 class App extends Component {
     constructor(){
