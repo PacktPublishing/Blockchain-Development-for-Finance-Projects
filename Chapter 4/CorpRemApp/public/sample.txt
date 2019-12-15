@@ -1,0 +1,55 @@
+/*
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+'use strict';
+
+const { Contract } = require('fabric-contract-api');
+
+class CorpRem extends Contract {
+	
+	const lastTxID = 0;
+
+async initLedger(ctx) {    
+
+	var lastTxId;
+	console.info('============= START : Instantiating Ledger ===========');
+await ctx.stub.putState('lastTxId',Buffer.from(JSON.stringify(0)));
+	console.info('============= END: Instantiating Ledger ===========');
+
+}
+
+
+
+
+
+async createTx(ctx, s_name, s_account,s_bank, s_addr,r_name, r_account,r_bank, r_address, curr, amt, Inv_hash, BOE_hash, Doc_Hash ) {
+        console.info('============= START : Create Transaction ===========');
+		
+		const txid = Number((await ctx.stub.getState('lastTxID')).toString());
+		
+		
+        const transaction = {
+        txid, s_name, s_account,s_bank, s_addr,r_name, r_account,r_bank, r_address, curr, amt, Inv_hash, BOE_hash, Doc_Hash
+        };
+
+        await ctx.stub.putState(txid, Buffer.from(JSON.stringify(transaction)));
+        console.info('============= END : Create Transaction ===========');
+    	txid++;
+		ctx.stub.setEvent('txCreated', Buffer.from(JSON.stringify(transaction)));
+		await ctx.stub.putState('lastTxID', Buffer.from(JSON.stringify(txid)));
+	}
+
+
+
+    async queryTx (ctx, txid) {
+        const transaction = await ctx.stub.getState(txid); // get the transaction from chaincode state
+        if (!transaction || transaction.length === 0) {
+            throw new Error(`Transaction ${txid} does not exist`);
+        }
+        console.log(transaction.toString());
+        return transaction.toString();
+    }
+	
+
+module.exports = CorpRem;
