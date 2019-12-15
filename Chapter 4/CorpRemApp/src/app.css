@@ -1,0 +1,38 @@
+img.meta-trademark {
+    width: 20%;
+}
+
+#token-lists {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#token-lists div.token:nth-child(even) {
+    background: #f5f5f5;
+}
+
+#token-lists div.token {
+    cursor: pointer;
+}
+
+.sortby {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.token-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.download-metamask {
+    height: 30%;
+    cursor: pointer;
+    width: 70%;
+    margin: auto;
+}
+
+.is-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
