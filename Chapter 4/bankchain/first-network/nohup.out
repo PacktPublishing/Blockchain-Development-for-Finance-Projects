@@ -1,0 +1,1087 @@
+Creating peer1.bankb.example.com ... 
+Creating ca_peerbankb ... 
+Creating peer0.bankb.example.com ... 
+Creating peer1.bankb.example.com
+Creating orderer.example.com ... 
+Creating peer1.banka.example.com ... 
+Creating ca_peerbankb
+Creating ca_peerbanka ... 
+Creating peer0.banka.example.com ... 
+Creating peer0.bankb.example.com
+Creating orderer.example.com
+Creating peer1.banka.example.com
+Creating ca_peerbanka
+Creating peer0.banka.example.com
+[1A[2KCreating peer1.bankb.example.com ... [32mdone[0m[1B[1A[2KCreating ca_peerbanka ... [32mdone[0m[1B[1A[2KCreating peer0.banka.example.com ... [32mdone[0m[1B[1A[2KCreating peer0.bankb.example.com ... [32mdone[0m[1B[1A[2KCreating ca_peerbankb ... [32mdone[0m[1B[1A[2KCreating peer1.banka.example.com ... [32mdone[0m[1B[1A[2KCreating orderer.example.com ... [32mdone[0m[1BAttaching to peer1.bankb.example.com, ca_peerbanka, peer0.banka.example.com, peer0.bankb.example.com, ca_peerbankb, peer1.banka.example.com, orderer.example.com
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.355 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+[36mpeer1.bankb.example.com    |[0m  Version: 1.4.3
+[36mpeer1.bankb.example.com    |[0m  Commit SHA: b8c4a6a
+[36mpeer1.bankb.example.com    |[0m  Go version: go1.11.5
+[36mpeer1.bankb.example.com    |[0m  OS/Arch: linux/amd64
+[36mpeer1.bankb.example.com    |[0m  Chaincode:
+[36mpeer1.bankb.example.com    |[0m   Base Image Version: 0.4.15
+[36mpeer1.bankb.example.com    |[0m   Base Docker Namespace: hyperledger
+[36mpeer1.bankb.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[36mpeer1.bankb.example.com    |[0m   Docker Namespace: hyperledger
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.355 UTC [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.355 UTC [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.385 UTC [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.463 UTC [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.488 UTC [peer] func1 -> INFO 006[0m Auto-detected peer address: 172.22.0.2:10051
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.488 UTC [peer] func1 -> INFO 007[0m Returning peer1.bankb.example.com:10051
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.488 UTC [peer] func1 -> INFO 008[0m Auto-detected peer address: 172.22.0.2:10051
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.489 UTC [peer] func1 -> INFO 009[0m Returning peer1.bankb.example.com:10051
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.491 UTC [nodeCmd] serve -> INFO 00a[0m Starting peer with TLS enabled
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.492 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00b[0m Entering computeChaincodeEndpoint with peerHostname: peer1.bankb.example.com
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.492 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Exit with ccEndpoint: peer1.bankb.example.com:10052
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.493 UTC [sccapi] registerSysCC -> INFO 00d[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.493 UTC [sccapi] registerSysCC -> INFO 00e[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.493 UTC [sccapi] registerSysCC -> INFO 00f[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.493 UTC [sccapi] registerSysCC -> INFO 010[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle,true) disabled
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.500 UTC [gossip.service] func1 -> INFO 011[0m Initialize gossip with endpoint peer1.bankb.example.com:10051 and bootstrap set [peer0.bankb.example.com:9051]
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.508 UTC [gossip.gossip] NewGossipService -> INFO 012[0m Creating gossip service with self membership of Endpoint: peer1.bankb.example.com:10051, InternalEndpoint: peer1.bankb.example.com:10051, PKI-ID: a434b49ff179b91ff1db73736b121ff114aa872e92d2a6197ca4113c0728a009, Metadata: 
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.509 UTC [gossip.gossip] start -> INFO 013[0m Gossip instance peer1.bankb.example.com:10051 started
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.513 UTC [sccapi] deploySysCC -> INFO 014[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.513 UTC [cscc] Init -> INFO 015[0m Init CSCC
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.513 UTC [sccapi] deploySysCC -> INFO 016[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.514 UTC [qscc] Init -> INFO 017[0m Init QSCC
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.514 UTC [sccapi] deploySysCC -> INFO 018[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.514 UTC [sccapi] deploySysCC -> INFO 019[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.514 UTC [nodeCmd] serve -> INFO 01a[0m Deployed system chaincodes
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.516 UTC [discovery] NewService -> INFO 01b[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.516 UTC [nodeCmd] registerDiscoveryService -> INFO 01c[0m Discovery service activated
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.516 UTC [nodeCmd] serve -> INFO 01d[0m Starting peer with ID=[name:"peer1.bankb.example.com" ], network ID=[dev], address=[peer1.bankb.example.com:10051]
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.516 UTC [nodeCmd] serve -> INFO 01e[0m Started peer with ID=[name:"peer1.bankb.example.com" ], network ID=[dev], address=[peer1.bankb.example.com:10051]
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.516 UTC [kvledger] LoadPreResetHeight -> INFO 01f[0m Loading prereset height from path [/var/hyperledger/production/ledgersData/chains]
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.516 UTC [fsblkstorage] LoadPreResetHeight -> INFO 020[0m Loading Pre-reset heights
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.516 UTC [fsblkstorage] preRestHtFiles -> INFO 021[0m Dir [/var/hyperledger/production/ledgersData/chains/chains] missing... exiting
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.516 UTC [fsblkstorage] LoadPreResetHeight -> INFO 022[0m Pre-reset heights loaded
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:33.516 UTC [nodeCmd] func7 -> INFO 023[0m Starting profiling server with listenAddress = 0.0.0.0:6060
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:36.363 UTC [comm.grpc.server] 1 -> INFO 024[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:02:38.362Z grpc.peer_address=172.22.0.5:37002 grpc.peer_subject="CN=peer0.bankb.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=45.248µs
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:36.372 UTC [comm.grpc.server] 1 -> INFO 025[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2019-11-14T09:02:46.363Z grpc.peer_address=172.22.0.5:37002 grpc.peer_subject="CN=peer0.bankb.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=7.795581ms
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:02:36.382 UTC [comm.grpc.server] 1 -> INFO 026[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:02:38.382Z grpc.peer_address=172.22.0.5:37004 grpc.peer_subject="CN=peer0.bankb.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=50.749µs
+[36mpeer1.bankb.example.com    |[0m [33m2019-11-14 09:02:36.509 UTC [gossip.discovery] func1 -> WARN 027[0m Could not connect to Endpoint: peer0.bankb.example.com:9051, InternalEndpoint: peer0.bankb.example.com:9051, PKI-ID: <nil>, Metadata:  : context deadline exceeded
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Home directory: /etc/hyperledger/fabric-ca-server
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] parent server URL: ''
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [INFO] Created default configuration file at /etc/hyperledger/fabric-ca-server/fabric-ca-server-config.yaml
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [INFO] Starting server in home directory: /etc/hyperledger/fabric-ca-server
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Set log level: 
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [INFO] Server Version: 1.4.3
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [INFO] Server Levels: &{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Making server filenames absolute
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Initializing default CA in directory /etc/hyperledger/fabric-ca-server
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Init CA with home /etc/hyperledger/fabric-ca-server and config {Version:1.4.3 Cfg:{Identities:{PasswordAttempts:10 AllowRemove:false} Affiliations:{AllowRemove:false}} CA:{Name:ca-banka Keyfile:/etc/hyperledger/fabric-ca-server-config/4c08f14f31ad50e39a64b7043aca60d3a0dabe16010c0da5cb03ab8456773332_sk Certfile:/etc/hyperledger/fabric-ca-server-config/ca.banka.example.com-cert.pem Chainfile:ca-chain.pem} Signing:0xc0001f4de0 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[48f8bcc6f640 localhost] KeyRequest:0xc000238ea0 CA:0xc000238f20 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1 hf.Registrar.Roles:* hf.Registrar.DelegateRoles:*]  }]} Affiliations:map[org1:[department1 department2] org2:[department1]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) Attribute:{[uid member] [{ }] map[groups:[{ }]]} TLS:{false [] { }}  } DB:{ Type:sqlite3 Datasource:fabric-ca-server.db TLS:{false [] { }}  } CSP:0xc00033f1c0 Client:<nil> Intermediate:{ParentServer:{ URL: CAName:  } TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{ Name: Secret:**** CAName: AttrReqs:[] Profile: Label: CSR:<nil> Type:x509  }} CRL:{Expiry:24h0m0s} Idemix:{IssuerPublicKeyfile: IssuerSecretKeyfile: RevocationPublicKeyfile: RevocationPrivateKeyfile: RHPoolSize:1000 NonceExpiration:15s NonceSweepInterval:15m}}
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] CA Home Directory: /etc/hyperledger/fabric-ca-server
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Checking configuration file version '1.4.3' against server version: '1.4.3'
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Initializing BCCSP: &{ProviderName:SW SwOpts:0xc0002583c0 PluginOpts:<nil>}
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Initializing BCCSP with software options &{SecLevel:256 HashFamily:SHA2 Ephemeral:false FileKeystore:0xc0001f4970 DummyKeystore:<nil> InmemKeystore:<nil>}
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Initialize key material
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Making CA filenames absolute
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [INFO] The CA key and certificate files already exist
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [INFO] Key file location: /etc/hyperledger/fabric-ca-server-config/4c08f14f31ad50e39a64b7043aca60d3a0dabe16010c0da5cb03ab8456773332_sk
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [INFO] Certificate file location: /etc/hyperledger/fabric-ca-server-config/ca.banka.example.com-cert.pem
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Validating the CA certificate and key
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Check CA certificate for valid dates
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Check CA certificate for valid usages
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Check CA certificate for valid IsCA value
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Check that key type is supported
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Check that key size is of appropriate length
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Check that public key and private key match
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Validation of CA certificate and key successful
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Loading CN from existing enrollment information
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Initializing DB
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Initializing 'sqlite3' database at '/etc/hyperledger/fabric-ca-server/fabric-ca-server.db'
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Using sqlite database, connect to database in home (/etc/hyperledger/fabric-ca-server/fabric-ca-server.db) directory
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.689 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+[32mpeer0.banka.example.com    |[0m  Version: 1.4.3
+[32mpeer0.banka.example.com    |[0m  Commit SHA: b8c4a6a
+[32mpeer0.banka.example.com    |[0m  Go version: go1.11.5
+[32mpeer0.banka.example.com    |[0m  OS/Arch: linux/amd64
+[32mpeer0.banka.example.com    |[0m  Chaincode:
+[32mpeer0.banka.example.com    |[0m   Base Image Version: 0.4.15
+[32mpeer0.banka.example.com    |[0m   Base Docker Namespace: hyperledger
+[32mpeer0.banka.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[32mpeer0.banka.example.com    |[0m   Docker Namespace: hyperledger
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating SQLite database (/etc/hyperledger/fabric-ca-server/fabric-ca-server.db) if it does not exist...
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating users table if it does not exist
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating affiliations table if it does not exist
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating certificates table if it does not exist
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.691 UTC [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating credentials table if it does not exist
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.691 UTC [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating revocation_authority_info table if it does not exist
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.730 UTC [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating nonces table if it does not exist
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.760 UTC [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating properties table if it does not exist
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.760 UTC [peer] func1 -> INFO 006[0m Auto-detected peer address: 172.22.0.8:7051
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Successfully opened sqlite3 DB
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.761 UTC [peer] func1 -> INFO 007[0m Returning peer0.banka.example.com:7051
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Initializing identity registry
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.761 UTC [peer] func1 -> INFO 008[0m Auto-detected peer address: 172.22.0.8:7051
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Initialized DB identity registry
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.761 UTC [peer] func1 -> INFO 009[0m Returning peer0.banka.example.com:7051
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Checking database levels '&{Identity:0 Affiliation:0 Certificate:0 Credential:0 RAInfo:0 Nonce:0}' against server levels '&{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}'
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Migrating users table...
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.765 UTC [nodeCmd] serve -> INFO 00a[0m Starting peer with TLS enabled
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Upgrade identity table to level 1
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.772 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00b[0m Entering computeChaincodeEndpoint with peerHostname: peer0.banka.example.com
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating users table if it does not exist
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.772 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Exit with ccEndpoint: peer0.banka.example.com:7052
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Upgrade identity table to level 2
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.775 UTC [sccapi] registerSysCC -> INFO 00d[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating users table if it does not exist
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Migrating affiliation table...
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Upgrade affiliations table to level 1
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.778 UTC [sccapi] registerSysCC -> INFO 00e[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating affiliations table if it does not exist
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.778 UTC [sccapi] registerSysCC -> INFO 00f[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Upgrade certificates table...
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.135 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+[35mpeer0.bankb.example.com    |[0m  Version: 1.4.3
+[35mpeer0.bankb.example.com    |[0m  Commit SHA: b8c4a6a
+[35mpeer0.bankb.example.com    |[0m  Go version: go1.11.5
+[35mpeer0.bankb.example.com    |[0m  OS/Arch: linux/amd64
+[35mpeer0.bankb.example.com    |[0m  Chaincode:
+[35mpeer0.bankb.example.com    |[0m   Base Image Version: 0.4.15
+[35mpeer0.bankb.example.com    |[0m   Base Docker Namespace: hyperledger
+[35mpeer0.bankb.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[35mpeer0.bankb.example.com    |[0m   Docker Namespace: hyperledger
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.778 UTC [sccapi] registerSysCC -> INFO 010[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle,true) disabled
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Upgrade certificates table to level 1
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Creating certificates table if it does not exist
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.788 UTC [gossip.service] func1 -> INFO 011[0m Initialize gossip with endpoint peer0.banka.example.com:7051 and bootstrap set [peer1.banka.example.com:8051]
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Migrating credentials table...
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.803 UTC [gossip.gossip] NewGossipService -> INFO 012[0m Creating gossip service with self membership of Endpoint: peer0.banka.example.com:7051, InternalEndpoint: peer0.banka.example.com:7051, PKI-ID: 0d3f29d42708cfea32c117cc17dd4c61fd6bd69c71f951615ca979416c793228, Metadata: 
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Migrating nonces table...
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Migrating revocation_authority_info table...
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.804 UTC [gossip.gossip] start -> INFO 013[0m Gossip instance peer0.banka.example.com:7051 started
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Loading identity table
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.807 UTC [sccapi] deploySysCC -> INFO 014[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.141 UTC [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Loading identity 'admin'
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.808 UTC [cscc] Init -> INFO 015[0m Init CSCC
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.143 UTC [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] DB: Getting identity admin
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.808 UTC [sccapi] deploySysCC -> INFO 016[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.206 UTC [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Max enrollment value verification - User specified max enrollment: 0, CA max enrollment: -1
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.809 UTC [qscc] Init -> INFO 017[0m Init QSCC
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.289 UTC [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] DB: Add identity admin
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.809 UTC [sccapi] deploySysCC -> INFO 018[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.290 UTC [peer] func1 -> INFO 006[0m Auto-detected peer address: 172.22.0.5:9051
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Successfully added identity admin to the database
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.809 UTC [sccapi] deploySysCC -> INFO 019[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.290 UTC [peer] func1 -> INFO 007[0m Returning peer0.bankb.example.com:9051
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Registered identity: { Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:-1 Attrs:map[hf.Registrar.Attributes:* hf.AffiliationMgr:1 hf.Registrar.Roles:* hf.Registrar.DelegateRoles:* hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1]  }
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.809 UTC [nodeCmd] serve -> INFO 01a[0m Deployed system chaincodes
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.290 UTC [peer] func1 -> INFO 008[0m Auto-detected peer address: 172.22.0.5:9051
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Successfully loaded identity table
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.811 UTC [discovery] NewService -> INFO 01b[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.290 UTC [peer] func1 -> INFO 009[0m Returning peer0.bankb.example.com:9051
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Loading affiliations table
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.811 UTC [nodeCmd] registerDiscoveryService -> INFO 01c[0m Discovery service activated
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.295 UTC [nodeCmd] serve -> INFO 00a[0m Starting peer with TLS enabled
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] DB: Add affiliation org1
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.812 UTC [nodeCmd] serve -> INFO 01d[0m Starting peer with ID=[name:"peer0.banka.example.com" ], network ID=[dev], address=[peer0.banka.example.com:7051]
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.299 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00b[0m Entering computeChaincodeEndpoint with peerHostname: peer0.bankb.example.com
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Affiliation 'org1' added
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] DB: Add affiliation org1.department1
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Home directory: /etc/hyperledger/fabric-ca-server
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] parent server URL: ''
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] Created default configuration file at /etc/hyperledger/fabric-ca-server/fabric-ca-server-config.yaml
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] Starting server in home directory: /etc/hyperledger/fabric-ca-server
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Set log level: 
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] Server Version: 1.4.3
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] Server Levels: &{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Making server filenames absolute
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Initializing default CA in directory /etc/hyperledger/fabric-ca-server
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Init CA with home /etc/hyperledger/fabric-ca-server and config {Version:1.4.3 Cfg:{Identities:{PasswordAttempts:10 AllowRemove:false} Affiliations:{AllowRemove:false}} CA:{Name:ca-bankb Keyfile:/etc/hyperledger/fabric-ca-server-config/ebe260ad26a941047daf88bad52fd13df0d791488413f92ed6a8b9b248b3312f_sk Certfile:/etc/hyperledger/fabric-ca-server-config/ca.bankb.example.com-cert.pem Chainfile:ca-chain.pem} Signing:0xc000447d90 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[019d95dfc823 localhost] KeyRequest:0xc00022ad20 CA:0xc00022ada0 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.Registrar.Roles:* hf.Registrar.DelegateRoles:* hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1]  }]} Affiliations:map[org2:[department1] org1:[department1 department2]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) Attribute:{[uid member] [{ }] map[groups:[{ }]]} TLS:{false [] { }}  } DB:{ Type:sqlite3 Datasource:fabric-ca-server.db TLS:{false [] { }}  } CSP:0xc00022a160 Client:<nil> Intermediate:{ParentServer:{ URL: CAName:  } TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{ Name: Secret:**** CAName: AttrReqs:[] Profile: Label: CSR:<nil> Type:x509  }} CRL:{Expiry:24h0m0s} Idemix:{IssuerPublicKeyfile: IssuerSecretKeyfile: RevocationPublicKeyfile: RevocationPrivateKeyfile: RHPoolSize:1000 NonceExpiration:15s NonceSweepInterval:15m}}
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] CA Home Directory: /etc/hyperledger/fabric-ca-server
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Checking configuration file version '1.4.3' against server version: '1.4.3'
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Initializing BCCSP: &{ProviderName:SW SwOpts:0xc00021c380 PluginOpts:<nil>}
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Initializing BCCSP with software options &{SecLevel:256 HashFamily:SHA2 Ephemeral:false FileKeystore:0xc0002053b0 DummyKeystore:<nil> InmemKeystore:<nil>}
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Initialize key material
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Making CA filenames absolute
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] The CA key and certificate files already exist
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] Key file location: /etc/hyperledger/fabric-ca-server-config/ebe260ad26a941047daf88bad52fd13df0d791488413f92ed6a8b9b248b3312f_sk
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] Certificate file location: /etc/hyperledger/fabric-ca-server-config/ca.bankb.example.com-cert.pem
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Validating the CA certificate and key
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Check CA certificate for valid dates
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Check CA certificate for valid usages
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Check CA certificate for valid IsCA value
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Check that key type is supported
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Check that key size is of appropriate length
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Check that public key and private key match
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Validation of CA certificate and key successful
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Loading CN from existing enrollment information
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Initializing DB
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Initializing 'sqlite3' database at '/etc/hyperledger/fabric-ca-server/fabric-ca-server.db'
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Using sqlite database, connect to database in home (/etc/hyperledger/fabric-ca-server/fabric-ca-server.db) directory
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating SQLite database (/etc/hyperledger/fabric-ca-server/fabric-ca-server.db) if it does not exist...
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating users table if it does not exist
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating affiliations table if it does not exist
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating certificates table if it does not exist
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating credentials table if it does not exist
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.812 UTC [nodeCmd] serve -> INFO 01e[0m Started peer with ID=[name:"peer0.banka.example.com" ], network ID=[dev], address=[peer0.banka.example.com:7051]
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.303 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Exit with ccEndpoint: peer0.bankb.example.com:9052
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Affiliation 'org1.department1' added
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] DB: Add affiliation org1.department2
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.812 UTC [kvledger] LoadPreResetHeight -> INFO 01f[0m Loading prereset height from path [/var/hyperledger/production/ledgersData/chains]
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.307 UTC [sccapi] registerSysCC -> INFO 00d[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.812 UTC [fsblkstorage] LoadPreResetHeight -> INFO 020[0m Loading Pre-reset heights
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Affiliation 'org1.department2' added
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] DB: Add affiliation org2
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.307 UTC [sccapi] registerSysCC -> INFO 00e[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.812 UTC [fsblkstorage] preRestHtFiles -> INFO 021[0m Dir [/var/hyperledger/production/ledgersData/chains/chains] missing... exiting
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.307 UTC [sccapi] registerSysCC -> INFO 00f[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Affiliation 'org2' added
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] DB: Add affiliation org2.department1
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.812 UTC [fsblkstorage] LoadPreResetHeight -> INFO 022[0m Pre-reset heights loaded
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.308 UTC [sccapi] registerSysCC -> INFO 010[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle,true) disabled
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:34.812 UTC [nodeCmd] func7 -> INFO 023[0m Starting profiling server with listenAddress = 0.0.0.0:6060
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Affiliation 'org2.department1' added
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Successfully loaded affiliations table
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [INFO] Initialized sqlite3 database at /etc/hyperledger/fabric-ca-server/fabric-ca-server.db
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Initializing enrollment signer
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] No key found in BCCSP keystore, attempting fallback
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] validating configuration
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] validate local profile
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] profile is valid
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] validate local profile
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] profile is valid
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] validate local profile
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] profile is valid
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] CA initialization successful
+[33mca_peerbanka               |[0m 2019/11/14 09:02:34 [DEBUG] Initializing Idemix issuer...
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.320 UTC [gossip.service] func1 -> INFO 011[0m Initialize gossip with endpoint peer0.bankb.example.com:9051 and bootstrap set [peer1.bankb.example.com:10051]
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:36.469 UTC [comm.grpc.server] 1 -> INFO 024[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:02:38.469Z grpc.peer_address=172.22.0.7:46366 grpc.peer_subject="CN=peer1.banka.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=41.389µs
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.326 UTC [gossip.gossip] NewGossipService -> INFO 012[0m Creating gossip service with self membership of Endpoint: peer0.bankb.example.com:9051, InternalEndpoint: peer0.bankb.example.com:9051, PKI-ID: adc3da8afaece69f98ff3db473a29c650509be7e769c4fa0d696bb6d47bf6d50, Metadata: 
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:36.478 UTC [comm.grpc.server] 1 -> INFO 025[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2019-11-14T09:02:46.471Z grpc.peer_address=172.22.0.7:46366 grpc.peer_subject="CN=peer1.banka.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=6.727473ms
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.336 UTC [gossip.gossip] start -> INFO 013[0m Gossip instance peer0.bankb.example.com:9051 started
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:36.482 UTC [comm.grpc.server] 1 -> INFO 026[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:02:38.482Z grpc.peer_address=172.22.0.7:46368 grpc.peer_subject="CN=peer1.banka.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=38.483µs
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.343 UTC [sccapi] deploySysCC -> INFO 014[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.344 UTC [cscc] Init -> INFO 015[0m Init CSCC
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.344 UTC [sccapi] deploySysCC -> INFO 016[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.345 UTC [qscc] Init -> INFO 017[0m Init QSCC
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.348 UTC [sccapi] deploySysCC -> INFO 018[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [INFO] The issuer key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerPublicKey, secret key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerSecretKey
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.350 UTC [sccapi] deploySysCC -> INFO 019[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [DEBUG] Intializing revocation authority for issuer 'ca-banka'
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.350 UTC [nodeCmd] serve -> INFO 01a[0m Deployed system chaincodes
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [DEBUG] Initialize Idemix issuer revocation key material
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.275 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+[34mpeer1.banka.example.com    |[0m  Version: 1.4.3
+[34mpeer1.banka.example.com    |[0m  Commit SHA: b8c4a6a
+[34mpeer1.banka.example.com    |[0m  Go version: go1.11.5
+[34mpeer1.banka.example.com    |[0m  OS/Arch: linux/amd64
+[34mpeer1.banka.example.com    |[0m  Chaincode:
+[34mpeer1.banka.example.com    |[0m   Base Image Version: 0.4.15
+[34mpeer1.banka.example.com    |[0m   Base Docker Namespace: hyperledger
+[34mpeer1.banka.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[34mpeer1.banka.example.com    |[0m   Docker Namespace: hyperledger
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.351 UTC [discovery] NewService -> INFO 01b[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [INFO] Idemix issuer revocation public and secret keys were generated for CA 'ca-banka'
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.352 UTC [nodeCmd] registerDiscoveryService -> INFO 01c[0m Discovery service activated
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [INFO] The revocation key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerRevocationPublicKey, private key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerRevocationPrivateKey
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.353 UTC [nodeCmd] serve -> INFO 01d[0m Starting peer with ID=[name:"peer0.bankb.example.com" ], network ID=[dev], address=[peer0.bankb.example.com:9051]
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [DEBUG] Intializing nonce manager for issuer 'ca-banka'
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.353 UTC [nodeCmd] serve -> INFO 01e[0m Started peer with ID=[name:"peer0.bankb.example.com" ], network ID=[dev], address=[peer0.bankb.example.com:9051]
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [INFO] Home directory for default CA: /etc/hyperledger/fabric-ca-server
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.353 UTC [kvledger] LoadPreResetHeight -> INFO 01f[0m Loading prereset height from path [/var/hyperledger/production/ledgersData/chains]
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [DEBUG] 1 CA instance(s) running on server
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.354 UTC [fsblkstorage] LoadPreResetHeight -> INFO 020[0m Loading Pre-reset heights
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [INFO] Operation Server Listening on 127.0.0.1:9443
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.354 UTC [fsblkstorage] preRestHtFiles -> INFO 021[0m Dir [/var/hyperledger/production/ledgersData/chains/chains] missing... exiting
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [DEBUG] TLS is enabled
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [DEBUG] TLS Certificate: /etc/hyperledger/fabric-ca-server-config/ca.banka.example.com-cert.pem, TLS Key: /etc/hyperledger/fabric-ca-server-config/4c08f14f31ad50e39a64b7043aca60d3a0dabe16010c0da5cb03ab8456773332_sk
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.354 UTC [fsblkstorage] LoadPreResetHeight -> INFO 022[0m Pre-reset heights loaded
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.283 UTC [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [DEBUG] Client authentication type requested: noclientcert
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:02:36.354 UTC [nodeCmd] func7 -> INFO 023[0m Starting profiling server with listenAddress = 0.0.0.0:6060
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.284 UTC [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+[33mca_peerbanka               |[0m 2019/11/14 09:02:35 [INFO] Listening on https://0.0.0.0:7054
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.343 UTC [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.415 UTC [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.415 UTC [peer] func1 -> INFO 006[0m Auto-detected peer address: 172.22.0.7:8051
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.415 UTC [peer] func1 -> INFO 007[0m Returning peer1.banka.example.com:8051
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.416 UTC [peer] func1 -> INFO 008[0m Auto-detected peer address: 172.22.0.7:8051
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.416 UTC [peer] func1 -> INFO 009[0m Returning peer1.banka.example.com:8051
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.420 UTC [nodeCmd] serve -> INFO 00a[0m Starting peer with TLS enabled
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.423 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00b[0m Entering computeChaincodeEndpoint with peerHostname: peer1.banka.example.com
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.423 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Exit with ccEndpoint: peer1.banka.example.com:8052
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.430 UTC [sccapi] registerSysCC -> INFO 00d[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating revocation_authority_info table if it does not exist
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.430 UTC [sccapi] registerSysCC -> INFO 00e[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.430 UTC [sccapi] registerSysCC -> INFO 00f[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating nonces table if it does not exist
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.430 UTC [sccapi] registerSysCC -> INFO 010[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle,true) disabled
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating properties table if it does not exist
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Successfully opened sqlite3 DB
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.436 UTC [gossip.service] func1 -> INFO 011[0m Initialize gossip with endpoint peer1.banka.example.com:8051 and bootstrap set [peer0.banka.example.com:7051]
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Initializing identity registry
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.452 UTC [gossip.gossip] NewGossipService -> INFO 012[0m Creating gossip service with self membership of Endpoint: peer1.banka.example.com:8051, InternalEndpoint: peer1.banka.example.com:8051, PKI-ID: 2ed3efe3953041578b4763cdd4ca60ee07375ed1de9d02277ce9318e24ab35c5, Metadata: 
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.453 UTC [gossip.gossip] start -> INFO 013[0m Gossip instance peer1.banka.example.com:8051 started
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Initialized DB identity registry
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.457 UTC [sccapi] deploySysCC -> INFO 014[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Checking database levels '&{Identity:0 Affiliation:0 Certificate:0 Credential:0 RAInfo:0 Nonce:0}' against server levels '&{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}'
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.458 UTC [cscc] Init -> INFO 015[0m Init CSCC
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Migrating users table...
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Upgrade identity table to level 1
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.458 UTC [sccapi] deploySysCC -> INFO 016[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating users table if it does not exist
+[36;1morderer.example.com        |[0m [34m2019-11-14 09:02:36.824 UTC [localconfig] completeInitialization -> INFO 001[0m Kafka.Version unset, setting to 0.10.2.0
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Upgrade identity table to level 2
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.458 UTC [qscc] Init -> INFO 017[0m Init QSCC
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating users table if it does not exist
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.459 UTC [sccapi] deploySysCC -> INFO 018[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Migrating affiliation table...
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.459 UTC [sccapi] deploySysCC -> INFO 019[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Upgrade affiliations table to level 1
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.459 UTC [nodeCmd] serve -> INFO 01a[0m Deployed system chaincodes
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating affiliations table if it does not exist
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.460 UTC [discovery] NewService -> INFO 01b[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Upgrade certificates table...
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.464 UTC [nodeCmd] registerDiscoveryService -> INFO 01c[0m Discovery service activated
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.464 UTC [nodeCmd] serve -> INFO 01d[0m Starting peer with ID=[name:"peer1.banka.example.com" ], network ID=[dev], address=[peer1.banka.example.com:8051]
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Upgrade certificates table to level 1
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Creating certificates table if it does not exist
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.464 UTC [nodeCmd] serve -> INFO 01e[0m Started peer with ID=[name:"peer1.banka.example.com" ], network ID=[dev], address=[peer1.banka.example.com:8051]
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Migrating credentials table...
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.464 UTC [kvledger] LoadPreResetHeight -> INFO 01f[0m Loading prereset height from path [/var/hyperledger/production/ledgersData/chains]
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Migrating nonces table...
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Migrating revocation_authority_info table...
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.465 UTC [fsblkstorage] LoadPreResetHeight -> INFO 020[0m Loading Pre-reset heights
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Loading identity table
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.465 UTC [fsblkstorage] preRestHtFiles -> INFO 021[0m Dir [/var/hyperledger/production/ledgersData/chains/chains] missing... exiting
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Loading identity 'admin'
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.465 UTC [fsblkstorage] LoadPreResetHeight -> INFO 022[0m Pre-reset heights loaded
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] DB: Getting identity admin
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Max enrollment value verification - User specified max enrollment: 0, CA max enrollment: -1
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:36.465 UTC [nodeCmd] func7 -> INFO 023[0m Starting profiling server with listenAddress = 0.0.0.0:6060
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] DB: Add identity admin
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Successfully added identity admin to the database
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Registered identity: { Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:-1 Attrs:map[hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1 hf.Registrar.Roles:* hf.Registrar.DelegateRoles:*]  }
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Successfully loaded identity table
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Loading affiliations table
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] DB: Add affiliation org2
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Affiliation 'org2' added
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] DB: Add affiliation org2.department1
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Affiliation 'org2.department1' added
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] DB: Add affiliation org1
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Affiliation 'org1' added
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] DB: Add affiliation org1.department1
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Affiliation 'org1.department1' added
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] DB: Add affiliation org1.department2
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Affiliation 'org1.department2' added
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Successfully loaded affiliations table
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] Initialized sqlite3 database at /etc/hyperledger/fabric-ca-server/fabric-ca-server.db
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Initializing enrollment signer
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] No key found in BCCSP keystore, attempting fallback
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] validating configuration
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] validate local profile
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] profile is valid
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] validate local profile
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] profile is valid
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] validate local profile
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] profile is valid
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] CA initialization successful
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Initializing Idemix issuer...
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] The issuer key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerPublicKey, secret key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerSecretKey
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Intializing revocation authority for issuer 'ca-bankb'
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Initialize Idemix issuer revocation key material
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] Idemix issuer revocation public and secret keys were generated for CA 'ca-bankb'
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] The revocation key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerRevocationPublicKey, private key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerRevocationPrivateKey
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Intializing nonce manager for issuer 'ca-bankb'
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] Home directory for default CA: /etc/hyperledger/fabric-ca-server
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] 1 CA instance(s) running on server
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] Operation Server Listening on 127.0.0.1:9443
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] TLS is enabled
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] TLS Certificate: /etc/hyperledger/fabric-ca-server-config/ca.bankb.example.com-cert.pem, TLS Key: /etc/hyperledger/fabric-ca-server-config/ebe260ad26a941047daf88bad52fd13df0d791488413f92ed6a8b9b248b3312f_sk
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [DEBUG] Client authentication type requested: noclientcert
+[31mca_peerbankb               |[0m 2019/11/14 09:02:36 [INFO] Listening on https://0.0.0.0:8054
+[36;1morderer.example.com        |[0m [34m2019-11-14 09:02:36.840 UTC [orderer.common.server] prettyPrintStruct -> INFO 002[0m Orderer config values:
+[36;1morderer.example.com        |[0m 	General.LedgerType = "file"
+[36;1morderer.example.com        |[0m 	General.ListenAddress = "0.0.0.0"
+[36;1morderer.example.com        |[0m 	General.ListenPort = 7050
+[36;1morderer.example.com        |[0m 	General.TLS.Enabled = true
+[36;1morderer.example.com        |[0m 	General.TLS.PrivateKey = "/var/hyperledger/orderer/tls/server.key"
+[36;1morderer.example.com        |[0m 	General.TLS.Certificate = "/var/hyperledger/orderer/tls/server.crt"
+[36;1morderer.example.com        |[0m 	General.TLS.RootCAs = [/var/hyperledger/orderer/tls/ca.crt]
+[36;1morderer.example.com        |[0m 	General.TLS.ClientAuthRequired = false
+[36;1morderer.example.com        |[0m 	General.TLS.ClientRootCAs = []
+[36;1morderer.example.com        |[0m 	General.Cluster.ListenAddress = ""
+[36;1morderer.example.com        |[0m 	General.Cluster.ListenPort = 0
+[36;1morderer.example.com        |[0m 	General.Cluster.ServerCertificate = ""
+[36;1morderer.example.com        |[0m 	General.Cluster.ServerPrivateKey = ""
+[36;1morderer.example.com        |[0m 	General.Cluster.ClientCertificate = "/var/hyperledger/orderer/tls/server.crt"
+[36;1morderer.example.com        |[0m 	General.Cluster.ClientPrivateKey = "/var/hyperledger/orderer/tls/server.key"
+[36;1morderer.example.com        |[0m 	General.Cluster.RootCAs = [/var/hyperledger/orderer/tls/ca.crt]
+[36;1morderer.example.com        |[0m 	General.Cluster.DialTimeout = 5s
+[36;1morderer.example.com        |[0m 	General.Cluster.RPCTimeout = 7s
+[36;1morderer.example.com        |[0m 	General.Cluster.ReplicationBufferSize = 20971520
+[36;1morderer.example.com        |[0m 	General.Cluster.ReplicationPullTimeout = 5s
+[36;1morderer.example.com        |[0m 	General.Cluster.ReplicationRetryTimeout = 5s
+[36;1morderer.example.com        |[0m 	General.Cluster.ReplicationBackgroundRefreshInterval = 5m0s
+[36;1morderer.example.com        |[0m 	General.Cluster.ReplicationMaxRetries = 12
+[36;1morderer.example.com        |[0m 	General.Cluster.SendBufferSize = 10
+[36;1morderer.example.com        |[0m 	General.Cluster.CertExpirationWarningThreshold = 168h0m0s
+[36;1morderer.example.com        |[0m 	General.Cluster.TLSHandshakeTimeShift = 0s
+[36;1morderer.example.com        |[0m 	General.Keepalive.ServerMinInterval = 1m0s
+[36;1morderer.example.com        |[0m 	General.Keepalive.ServerInterval = 2h0m0s
+[36;1morderer.example.com        |[0m 	General.Keepalive.ServerTimeout = 20s
+[36;1morderer.example.com        |[0m 	General.ConnectionTimeout = 0s
+[36;1morderer.example.com        |[0m 	General.GenesisMethod = "file"
+[36;1morderer.example.com        |[0m 	General.GenesisProfile = "SampleInsecureSolo"
+[36;1morderer.example.com        |[0m 	General.SystemChannel = "test-system-channel-name"
+[36;1morderer.example.com        |[0m 	General.GenesisFile = "/var/hyperledger/orderer/orderer.genesis.block"
+[36;1morderer.example.com        |[0m 	General.Profile.Enabled = false
+[36;1morderer.example.com        |[0m 	General.Profile.Address = "0.0.0.0:6060"
+[36;1morderer.example.com        |[0m 	General.LocalMSPDir = "/var/hyperledger/orderer/msp"
+[36;1morderer.example.com        |[0m 	General.LocalMSPID = "OrdererMSP"
+[36;1morderer.example.com        |[0m 	General.BCCSP.ProviderName = "SW"
+[36;1morderer.example.com        |[0m 	General.BCCSP.SwOpts.SecLevel = 256
+[36;1morderer.example.com        |[0m 	General.BCCSP.SwOpts.HashFamily = "SHA2"
+[36;1morderer.example.com        |[0m 	General.BCCSP.SwOpts.Ephemeral = false
+[36;1morderer.example.com        |[0m 	General.BCCSP.SwOpts.FileKeystore.KeyStorePath = "/var/hyperledger/orderer/msp/keystore"
+[36;1morderer.example.com        |[0m 	General.BCCSP.SwOpts.DummyKeystore =
+[36;1morderer.example.com        |[0m 	General.BCCSP.SwOpts.InmemKeystore =
+[36;1morderer.example.com        |[0m 	General.BCCSP.PluginOpts =
+[36;1morderer.example.com        |[0m 	General.Authentication.TimeWindow = 15m0s
+[36;1morderer.example.com        |[0m 	General.Authentication.NoExpirationChecks = false
+[36;1morderer.example.com        |[0m 	FileLedger.Location = "/var/hyperledger/production/orderer"
+[36;1morderer.example.com        |[0m 	FileLedger.Prefix = "hyperledger-fabric-ordererledger"
+[36;1morderer.example.com        |[0m 	RAMLedger.HistorySize = 1000
+[36;1morderer.example.com        |[0m 	Kafka.Retry.ShortInterval = 5s
+[36;1morderer.example.com        |[0m 	Kafka.Retry.ShortTotal = 10m0s
+[36;1morderer.example.com        |[0m 	Kafka.Retry.LongInterval = 5m0s
+[36;1morderer.example.com        |[0m 	Kafka.Retry.LongTotal = 12h0m0s
+[36;1morderer.example.com        |[0m 	Kafka.Retry.NetworkTimeouts.DialTimeout = 10s
+[36;1morderer.example.com        |[0m 	Kafka.Retry.NetworkTimeouts.ReadTimeout = 10s
+[36;1morderer.example.com        |[0m 	Kafka.Retry.NetworkTimeouts.WriteTimeout = 10s
+[36;1morderer.example.com        |[0m 	Kafka.Retry.Metadata.RetryMax = 3
+[36;1morderer.example.com        |[0m 	Kafka.Retry.Metadata.RetryBackoff = 250ms
+[36;1morderer.example.com        |[0m 	Kafka.Retry.Producer.RetryMax = 3
+[36;1morderer.example.com        |[0m 	Kafka.Retry.Producer.RetryBackoff = 100ms
+[36;1morderer.example.com        |[0m 	Kafka.Retry.Consumer.RetryBackoff = 2s
+[36;1morderer.example.com        |[0m 	Kafka.Verbose = true
+[36;1morderer.example.com        |[0m 	Kafka.Version = 0.10.2.0
+[36;1morderer.example.com        |[0m 	Kafka.TLS.Enabled = false
+[36;1morderer.example.com        |[0m 	Kafka.TLS.PrivateKey = ""
+[36;1morderer.example.com        |[0m 	Kafka.TLS.Certificate = ""
+[36;1morderer.example.com        |[0m 	Kafka.TLS.RootCAs = []
+[36;1morderer.example.com        |[0m 	Kafka.TLS.ClientAuthRequired = false
+[36;1morderer.example.com        |[0m 	Kafka.TLS.ClientRootCAs = []
+[36;1morderer.example.com        |[0m 	Kafka.SASLPlain.Enabled = false
+[36;1morderer.example.com        |[0m 	Kafka.SASLPlain.User = ""
+[36;1morderer.example.com        |[0m 	Kafka.SASLPlain.Password = ""
+[36;1morderer.example.com        |[0m 	Kafka.Topic.ReplicationFactor = 1
+[36;1morderer.example.com        |[0m 	Debug.BroadcastTraceDir = ""
+[36;1morderer.example.com        |[0m 	Debug.DeliverTraceDir = ""
+[36;1morderer.example.com        |[0m 	Consensus = map[WALDir:/var/hyperledger/production/orderer/etcdraft/wal SnapDir:/var/hyperledger/production/orderer/etcdraft/snapshot]
+[36;1morderer.example.com        |[0m 	Operations.ListenAddress = "127.0.0.1:8443"
+[36;1morderer.example.com        |[0m 	Operations.TLS.Enabled = false
+[36;1morderer.example.com        |[0m 	Operations.TLS.PrivateKey = ""
+[36;1morderer.example.com        |[0m 	Operations.TLS.Certificate = ""
+[36;1morderer.example.com        |[0m 	Operations.TLS.RootCAs = []
+[36;1morderer.example.com        |[0m 	Operations.TLS.ClientAuthRequired = false
+[36;1morderer.example.com        |[0m 	Operations.TLS.ClientRootCAs = []
+[36;1morderer.example.com        |[0m 	Metrics.Provider = "disabled"
+[36;1morderer.example.com        |[0m 	Metrics.Statsd.Network = "udp"
+[36;1morderer.example.com        |[0m 	Metrics.Statsd.Address = "127.0.0.1:8125"
+[36;1morderer.example.com        |[0m 	Metrics.Statsd.WriteInterval = 30s
+[36;1morderer.example.com        |[0m 	Metrics.Statsd.Prefix = ""
+[36;1morderer.example.com        |[0m [34m2019-11-14 09:02:36.859 UTC [orderer.common.server] extractSysChanLastConfig -> INFO 003[0m Not bootstrapping because of 1 existing channels
+[36;1morderer.example.com        |[0m [34m2019-11-14 09:02:36.865 UTC [orderer.common.server] extractSysChanLastConfig -> INFO 004[0m System channel: name=testchainid, height=1, last config block number=0
+[36;1morderer.example.com        |[0m [34m2019-11-14 09:02:36.865 UTC [orderer.common.server] selectClusterBootBlock -> INFO 005[0m Cluster boot block is bootstrap (genesis) block; Blocks Header.Number system-channel=0, bootstrap=0
+[36;1morderer.example.com        |[0m [34m2019-11-14 09:02:36.872 UTC [orderer.common.cluster] loadVerifier -> INFO 006[0m Loaded verifier for channel testchainid from config block at index 0
+[36;1morderer.example.com        |[0m [34m2019-11-14 09:02:36.872 UTC [orderer.common.server] initializeServerConfig -> INFO 007[0m Starting orderer with TLS enabled
+[36;1morderer.example.com        |[0m [34m2019-11-14 09:02:36.874 UTC [orderer.common.server] initializeMultichannelRegistrar -> INFO 008[0m Not bootstrapping because of existing channels
+[36;1morderer.example.com        |[0m [34m2019-11-14 09:02:36.883 UTC [orderer.commmon.multichannel] Initialize -> INFO 009[0m Starting system channel 'testchainid' with genesis block hash d2fc14f34bb10dd5407f07a806f7ca96ca3c1ecf01b2618605e9610c6bd70b28 and orderer type solo
+[36;1morderer.example.com        |[0m [34m2019-11-14 09:02:36.883 UTC [orderer.common.server] Start -> INFO 00a[0m Starting orderer:
+[36;1morderer.example.com        |[0m  Version: 1.4.3
+[36;1morderer.example.com        |[0m  Commit SHA: b8c4a6a
+[36;1morderer.example.com        |[0m  Go version: go1.11.5
+[36;1morderer.example.com        |[0m  OS/Arch: linux/amd64
+[36;1morderer.example.com        |[0m [34m2019-11-14 09:02:36.883 UTC [orderer.common.server] Start -> INFO 00b[0m Beginning to serve requests
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:37.164 UTC [comm.grpc.server] 1 -> INFO 024[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:02:39.164Z grpc.peer_address=172.22.0.8:59510 grpc.peer_subject="CN=peer0.banka.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=75.258µs
+[32mpeer0.banka.example.com    |[0m [34m2019-11-14 09:02:37.166 UTC [comm.grpc.server] 1 -> INFO 027[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.peer_address=172.22.0.7:46368 grpc.peer_subject="CN=peer1.banka.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=683.935842ms
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:37.168 UTC [comm.grpc.server] 1 -> INFO 025[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2019-11-14T09:02:47.165Z grpc.peer_address=172.22.0.8:59510 grpc.peer_subject="CN=peer0.banka.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=3.620113ms
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:02:37.172 UTC [comm.grpc.server] 1 -> INFO 026[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:02:39.172Z grpc.peer_address=172.22.0.8:59512 grpc.peer_subject="CN=peer0.banka.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=56.343µs
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:03:01.519 UTC [comm.grpc.server] 1 -> INFO 024[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:03:03.519Z grpc.peer_address=172.22.0.2:36322 grpc.peer_subject="CN=peer1.bankb.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=255.416µs
+[36mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:03:01.524 UTC [comm.grpc.server] 1 -> INFO 028[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.peer_address=172.22.0.5:37004 grpc.peer_subject="CN=peer0.bankb.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=25.140750966s
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:03:01.529 UTC [comm.grpc.server] 1 -> INFO 025[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2019-11-14T09:03:11.521Z grpc.peer_address=172.22.0.2:36322 grpc.peer_subject="CN=peer1.bankb.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=8.733316ms
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:03:01.536 UTC [comm.grpc.server] 1 -> INFO 026[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:03:03.536Z grpc.peer_address=172.22.0.2:36324 grpc.peer_subject="CN=peer1.bankb.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=122.305µs
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:08:24.410 UTC [comm.grpc.server] 1 -> INFO 027[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.peer_address=172.22.0.2:36324 grpc.peer_subject="CN=peer1.bankb.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=5m22.874461938s
+[34mpeer1.banka.example.com    |[0m [34m2019-11-14 09:08:24.441 UTC [comm.grpc.server] 1 -> INFO 027[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.peer_address=172.22.0.8:59512 grpc.peer_subject="CN=peer0.banka.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=5m47.269241983s
+[36mpeer1.bankb.example.com exited with code 137
+[0m[36;1morderer.example.com exited with code 137
+[0m[32mpeer0.banka.example.com exited with code 137
+[0m[33mca_peerbanka exited with code 137
+[0m[34mpeer1.banka.example.com exited with code 137
+[0m[31mca_peerbankb exited with code 137
+[0m[35mpeer0.bankb.example.com exited with code 137
+[0myaml.scanner.ScannerError: while scanning for the next token
+found character '\t' that cannot start any token
+  in "/home/ishan/fabric-samples/first-network/base/peer-base.yaml", line 12, column 1
+Creating peer1.bankb.example.com ... 
+Creating ca_peerbanka ... 
+Creating peer1.banka.example.com ... 
+Creating peer1.bankb.example.com
+Creating peer0.bankb.example.com ... 
+Creating peer0.banka.example.com ... 
+Creating ca_peerbanka
+Creating peer1.banka.example.com
+Creating ca_peerbankb ... 
+Creating peer0.banka.example.com
+Creating peer0.bankb.example.com
+Creating orderer.example.com ... 
+Creating orderer.example.com
+Creating ca_peerbankb
+[1A[2KCreating ca_peerbanka ... [32mdone[0m[1B[1A[2KCreating peer1.bankb.example.com ... [32mdone[0m[1B[1A[2KCreating ca_peerbankb ... [32mdone[0m[1B[1A[2KCreating peer0.bankb.example.com ... [32mdone[0m[1B[1A[2KCreating peer0.banka.example.com ... [32mdone[0m[1B[1A[2KCreating orderer.example.com ... [32mdone[0m[1B[1A[2KCreating peer1.banka.example.com ... [32mdone[0m[1BAttaching to ca_peerbanka, peer1.bankb.example.com, ca_peerbankb, peer0.bankb.example.com, peer0.banka.example.com, orderer.example.com, peer1.banka.example.com
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Home directory: /etc/hyperledger/fabric-ca-server
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] parent server URL: ''
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] Created default configuration file at /etc/hyperledger/fabric-ca-server/fabric-ca-server-config.yaml
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] Starting server in home directory: /etc/hyperledger/fabric-ca-server
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Set log level: 
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] Server Version: 1.4.3
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] Server Levels: &{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Making server filenames absolute
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Initializing default CA in directory /etc/hyperledger/fabric-ca-server
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Init CA with home /etc/hyperledger/fabric-ca-server and config {Version:1.4.3 Cfg:{Identities:{PasswordAttempts:10 AllowRemove:false} Affiliations:{AllowRemove:false}} CA:{Name:ca-banka Keyfile:/etc/hyperledger/fabric-ca-server-config/4c08f14f31ad50e39a64b7043aca60d3a0dabe16010c0da5cb03ab8456773332_sk Certfile:/etc/hyperledger/fabric-ca-server-config/ca.banka.example.com-cert.pem Chainfile:ca-chain.pem} Signing:0xc00017d820 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[df6bb7035fd6 localhost] KeyRequest:0xc0001deb60 CA:0xc0001debe0 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1 hf.Registrar.Roles:* hf.Registrar.DelegateRoles:*]  }]} Affiliations:map[org1:[department1 department2] org2:[department1]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) Attribute:{[uid member] [{ }] map[groups:[{ }]]} TLS:{false [] { }}  } DB:{ Type:sqlite3 Datasource:fabric-ca-server.db TLS:{false [] { }}  } CSP:0xc0001de5c0 Client:<nil> Intermediate:{ParentServer:{ URL: CAName:  } TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{ Name: Secret:**** CAName: AttrReqs:[] Profile: Label: CSR:<nil> Type:x509  }} CRL:{Expiry:24h0m0s} Idemix:{IssuerPublicKeyfile: IssuerSecretKeyfile: RevocationPublicKeyfile: RevocationPrivateKeyfile: RHPoolSize:1000 NonceExpiration:15s NonceSweepInterval:15m}}
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] CA Home Directory: /etc/hyperledger/fabric-ca-server
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Checking configuration file version '1.4.3' against server version: '1.4.3'
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Initializing BCCSP: &{ProviderName:SW SwOpts:0xc000100380 PluginOpts:<nil>}
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Initializing BCCSP with software options &{SecLevel:256 HashFamily:SHA2 Ephemeral:false FileKeystore:0xc0001dd510 DummyKeystore:<nil> InmemKeystore:<nil>}
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Initialize key material
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Making CA filenames absolute
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] The CA key and certificate files already exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] Key file location: /etc/hyperledger/fabric-ca-server-config/4c08f14f31ad50e39a64b7043aca60d3a0dabe16010c0da5cb03ab8456773332_sk
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] Certificate file location: /etc/hyperledger/fabric-ca-server-config/ca.banka.example.com-cert.pem
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Validating the CA certificate and key
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Check CA certificate for valid dates
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Check CA certificate for valid usages
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Check CA certificate for valid IsCA value
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Check that key type is supported
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Check that key size is of appropriate length
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Check that public key and private key match
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Validation of CA certificate and key successful
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Loading CN from existing enrollment information
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Initializing DB
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Initializing 'sqlite3' database at '/etc/hyperledger/fabric-ca-server/fabric-ca-server.db'
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Using sqlite database, connect to database in home (/etc/hyperledger/fabric-ca-server/fabric-ca-server.db) directory
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating SQLite database (/etc/hyperledger/fabric-ca-server/fabric-ca-server.db) if it does not exist...
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating users table if it does not exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating affiliations table if it does not exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating certificates table if it does not exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating credentials table if it does not exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating revocation_authority_info table if it does not exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating nonces table if it does not exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating properties table if it does not exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Successfully opened sqlite3 DB
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Initializing identity registry
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Initialized DB identity registry
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Checking database levels '&{Identity:0 Affiliation:0 Certificate:0 Credential:0 RAInfo:0 Nonce:0}' against server levels '&{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}'
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Migrating users table...
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Upgrade identity table to level 1
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating users table if it does not exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Upgrade identity table to level 2
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating users table if it does not exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Migrating affiliation table...
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Upgrade affiliations table to level 1
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating affiliations table if it does not exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Upgrade certificates table...
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Upgrade certificates table to level 1
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Creating certificates table if it does not exist
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Migrating credentials table...
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Migrating nonces table...
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Migrating revocation_authority_info table...
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.557 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+[33mpeer1.bankb.example.com    |[0m  Version: 1.4.3
+[33mpeer1.bankb.example.com    |[0m  Commit SHA: b8c4a6a
+[33mpeer1.bankb.example.com    |[0m  Go version: go1.11.5
+[33mpeer1.bankb.example.com    |[0m  OS/Arch: linux/amd64
+[33mpeer1.bankb.example.com    |[0m  Chaincode:
+[33mpeer1.bankb.example.com    |[0m   Base Image Version: 0.4.15
+[33mpeer1.bankb.example.com    |[0m   Base Docker Namespace: hyperledger
+[33mpeer1.bankb.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[33mpeer1.bankb.example.com    |[0m   Docker Namespace: hyperledger
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Loading identity table
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Loading identity 'admin'
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] DB: Getting identity admin
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Max enrollment value verification - User specified max enrollment: 0, CA max enrollment: -1
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] DB: Add identity admin
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.559 UTC [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Successfully added identity admin to the database
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Registered identity: { Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:-1 Attrs:map[hf.Registrar.DelegateRoles:* hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1 hf.Registrar.Roles:*]  }
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Successfully loaded identity table
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Loading affiliations table
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] DB: Add affiliation org1
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.559 UTC [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.596 UTC [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Affiliation 'org1' added
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] DB: Add affiliation org1.department1
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.643 UTC [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.643 UTC [peer] func1 -> INFO 006[0m Auto-detected peer address: 172.22.0.3:10051
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Affiliation 'org1.department1' added
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] DB: Add affiliation org1.department2
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.643 UTC [peer] func1 -> INFO 007[0m Returning peer1.bankb.example.com:10051
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Affiliation 'org1.department2' added
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] DB: Add affiliation org2
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.643 UTC [peer] func1 -> INFO 008[0m Auto-detected peer address: 172.22.0.3:10051
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.644 UTC [peer] func1 -> INFO 009[0m Returning peer1.bankb.example.com:10051
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Affiliation 'org2' added
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] DB: Add affiliation org2.department1
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.647 UTC [nodeCmd] serve -> INFO 00a[0m Starting peer with TLS enabled
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Affiliation 'org2.department1' added
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Successfully loaded affiliations table
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] Initialized sqlite3 database at /etc/hyperledger/fabric-ca-server/fabric-ca-server.db
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Initializing enrollment signer
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] No key found in BCCSP keystore, attempting fallback
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] validating configuration
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] validate local profile
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] profile is valid
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] validate local profile
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] profile is valid
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] validate local profile
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] profile is valid
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] CA initialization successful
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Initializing Idemix issuer...
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.649 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00b[0m Entering computeChaincodeEndpoint with peerHostname: peer1.bankb.example.com
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.649 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Exit with ccEndpoint: peer1.bankb.example.com:10052
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.653 UTC [sccapi] registerSysCC -> INFO 00d[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.653 UTC [sccapi] registerSysCC -> INFO 00e[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.653 UTC [sccapi] registerSysCC -> INFO 00f[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.653 UTC [sccapi] registerSysCC -> INFO 010[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle,true) disabled
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.659 UTC [gossip.service] func1 -> INFO 011[0m Initialize gossip with endpoint peer1.bankb.example.com:10051 and bootstrap set [peer0.bankb.example.com:9051]
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] The issuer key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerPublicKey, secret key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerSecretKey
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.668 UTC [gossip.gossip] NewGossipService -> INFO 012[0m Creating gossip service with self membership of Endpoint: peer1.bankb.example.com:10051, InternalEndpoint: peer1.bankb.example.com:10051, PKI-ID: a434b49ff179b91ff1db73736b121ff114aa872e92d2a6197ca4113c0728a009, Metadata: 
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Home directory: /etc/hyperledger/fabric-ca-server
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] parent server URL: ''
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] Created default configuration file at /etc/hyperledger/fabric-ca-server/fabric-ca-server-config.yaml
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] Starting server in home directory: /etc/hyperledger/fabric-ca-server
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Set log level: 
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] Server Version: 1.4.3
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] Server Levels: &{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Making server filenames absolute
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Initializing default CA in directory /etc/hyperledger/fabric-ca-server
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Init CA with home /etc/hyperledger/fabric-ca-server and config {Version:1.4.3 Cfg:{Identities:{PasswordAttempts:10 AllowRemove:false} Affiliations:{AllowRemove:false}} CA:{Name:ca-bankb Keyfile:/etc/hyperledger/fabric-ca-server-config/ebe260ad26a941047daf88bad52fd13df0d791488413f92ed6a8b9b248b3312f_sk Certfile:/etc/hyperledger/fabric-ca-server-config/ca.bankb.example.com-cert.pem Chainfile:ca-chain.pem} Signing:0xc0001ecad0 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[414d2b72bbf7 localhost] KeyRequest:0xc00034cf40 CA:0xc00034ccc0 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1 hf.Registrar.Roles:* hf.Registrar.DelegateRoles:* hf.Revoker:1 hf.IntermediateCA:1]  }]} Affiliations:map[org1:[department1 department2] org2:[department1]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) Attribute:{[uid member] [{ }] map[groups:[{ }]]} TLS:{false [] { }}  } DB:{ Type:sqlite3 Datasource:fabric-ca-server.db TLS:{false [] { }}  } CSP:0xc000284a80 Client:<nil> Intermediate:{ParentServer:{ URL: CAName:  } TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{ Name: Secret:**** CAName: AttrReqs:[] Profile: Label: CSR:<nil> Type:x509  }} CRL:{Expiry:24h0m0s} Idemix:{IssuerPublicKeyfile: IssuerSecretKeyfile: RevocationPublicKeyfile: RevocationPrivateKeyfile: RHPoolSize:1000 NonceExpiration:15s NonceSweepInterval:15m}}
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] CA Home Directory: /etc/hyperledger/fabric-ca-server
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Checking configuration file version '1.4.3' against server version: '1.4.3'
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Initializing BCCSP: &{ProviderName:SW SwOpts:0xc0003e4380 PluginOpts:<nil>}
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Initializing BCCSP with software options &{SecLevel:256 HashFamily:SHA2 Ephemeral:false FileKeystore:0xc00012c1d0 DummyKeystore:<nil> InmemKeystore:<nil>}
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Initialize key material
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Making CA filenames absolute
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] The CA key and certificate files already exist
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] Key file location: /etc/hyperledger/fabric-ca-server-config/ebe260ad26a941047daf88bad52fd13df0d791488413f92ed6a8b9b248b3312f_sk
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] Certificate file location: /etc/hyperledger/fabric-ca-server-config/ca.bankb.example.com-cert.pem
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Validating the CA certificate and key
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Check CA certificate for valid dates
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Check CA certificate for valid usages
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Check CA certificate for valid IsCA value
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Check that key type is supported
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Check that key size is of appropriate length
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Check that public key and private key match
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Validation of CA certificate and key successful
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Loading CN from existing enrollment information
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Initializing DB
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Initializing 'sqlite3' database at '/etc/hyperledger/fabric-ca-server/fabric-ca-server.db'
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Intializing revocation authority for issuer 'ca-banka'
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Initialize Idemix issuer revocation key material
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.672 UTC [gossip.gossip] start -> INFO 013[0m Gossip instance peer1.bankb.example.com:10051 started
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] Idemix issuer revocation public and secret keys were generated for CA 'ca-banka'
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] The revocation key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerRevocationPublicKey, private key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerRevocationPrivateKey
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.677 UTC [sccapi] deploySysCC -> INFO 014[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.678 UTC [cscc] Init -> INFO 015[0m Init CSCC
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Intializing nonce manager for issuer 'ca-banka'
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] Home directory for default CA: /etc/hyperledger/fabric-ca-server
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.678 UTC [sccapi] deploySysCC -> INFO 016[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.678 UTC [qscc] Init -> INFO 017[0m Init QSCC
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] 1 CA instance(s) running on server
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] Operation Server Listening on 127.0.0.1:9443
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] TLS is enabled
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] TLS Certificate: /etc/hyperledger/fabric-ca-server-config/ca.banka.example.com-cert.pem, TLS Key: /etc/hyperledger/fabric-ca-server-config/4c08f14f31ad50e39a64b7043aca60d3a0dabe16010c0da5cb03ab8456773332_sk
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [DEBUG] Client authentication type requested: noclientcert
+[36mca_peerbanka               |[0m 2019/11/14 09:17:22 [INFO] Listening on https://0.0.0.0:7054
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.678 UTC [sccapi] deploySysCC -> INFO 018[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.678 UTC [sccapi] deploySysCC -> INFO 019[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.678 UTC [nodeCmd] serve -> INFO 01a[0m Deployed system chaincodes
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.680 UTC [discovery] NewService -> INFO 01b[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.680 UTC [nodeCmd] registerDiscoveryService -> INFO 01c[0m Discovery service activated
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.680 UTC [nodeCmd] serve -> INFO 01d[0m Starting peer with ID=[name:"peer1.bankb.example.com" ], network ID=[dev], address=[peer1.bankb.example.com:10051]
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.680 UTC [nodeCmd] serve -> INFO 01e[0m Started peer with ID=[name:"peer1.bankb.example.com" ], network ID=[dev], address=[peer1.bankb.example.com:10051]
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.680 UTC [kvledger] LoadPreResetHeight -> INFO 01f[0m Loading prereset height from path [/var/hyperledger/production/ledgersData/chains]
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.680 UTC [fsblkstorage] LoadPreResetHeight -> INFO 020[0m Loading Pre-reset heights
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.680 UTC [fsblkstorage] preRestHtFiles -> INFO 021[0m Dir [/var/hyperledger/production/ledgersData/chains/chains] missing... exiting
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.680 UTC [fsblkstorage] LoadPreResetHeight -> INFO 022[0m Pre-reset heights loaded
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.783 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+[35mpeer0.bankb.example.com    |[0m  Version: 1.4.3
+[35mpeer0.bankb.example.com    |[0m  Commit SHA: b8c4a6a
+[35mpeer0.bankb.example.com    |[0m  Go version: go1.11.5
+[35mpeer0.bankb.example.com    |[0m  OS/Arch: linux/amd64
+[35mpeer0.bankb.example.com    |[0m  Chaincode:
+[35mpeer0.bankb.example.com    |[0m   Base Image Version: 0.4.15
+[35mpeer0.bankb.example.com    |[0m   Base Docker Namespace: hyperledger
+[35mpeer0.bankb.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[35mpeer0.bankb.example.com    |[0m   Docker Namespace: hyperledger
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.783 UTC [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.783 UTC [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:23.681 UTC [nodeCmd] func7 -> INFO 023[0m Starting profiling server with listenAddress = 0.0.0.0:6060
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:24.896 UTC [comm.grpc.server] 1 -> INFO 024[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:17:26.896Z grpc.peer_address=172.22.0.4:36672 grpc.peer_subject="CN=peer0.bankb.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=40.464µs
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:24.909 UTC [comm.grpc.server] 1 -> INFO 025[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2019-11-14T09:17:34.9Z grpc.peer_address=172.22.0.4:36672 grpc.peer_subject="CN=peer0.bankb.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=9.623897ms
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:24.911 UTC [comm.grpc.server] 1 -> INFO 026[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:17:26.911Z grpc.peer_address=172.22.0.4:36674 grpc.peer_subject="CN=peer0.bankb.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=40.863µs
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.816 UTC [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.857 UTC [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.862 UTC [peer] func1 -> INFO 006[0m Auto-detected peer address: 172.22.0.4:9051
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.862 UTC [peer] func1 -> INFO 007[0m Returning peer0.bankb.example.com:9051
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.862 UTC [peer] func1 -> INFO 008[0m Auto-detected peer address: 172.22.0.4:9051
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.863 UTC [peer] func1 -> INFO 009[0m Returning peer0.bankb.example.com:9051
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.864 UTC [nodeCmd] serve -> INFO 00a[0m Starting peer with TLS enabled
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.865 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00b[0m Entering computeChaincodeEndpoint with peerHostname: peer0.bankb.example.com
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.865 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Exit with ccEndpoint: peer0.bankb.example.com:9052
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.867 UTC [sccapi] registerSysCC -> INFO 00d[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.867 UTC [sccapi] registerSysCC -> INFO 00e[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.867 UTC [sccapi] registerSysCC -> INFO 00f[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.867 UTC [sccapi] registerSysCC -> INFO 010[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle,true) disabled
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.873 UTC [gossip.service] func1 -> INFO 011[0m Initialize gossip with endpoint peer0.bankb.example.com:9051 and bootstrap set [peer1.bankb.example.com:10051]
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.879 UTC [gossip.gossip] NewGossipService -> INFO 012[0m Creating gossip service with self membership of Endpoint: peer0.bankb.example.com:9051, InternalEndpoint: peer0.bankb.example.com:9051, PKI-ID: adc3da8afaece69f98ff3db473a29c650509be7e769c4fa0d696bb6d47bf6d50, Metadata: 
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.881 UTC [gossip.gossip] start -> INFO 013[0m Gossip instance peer0.bankb.example.com:9051 started
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.883 UTC [sccapi] deploySysCC -> INFO 014[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.883 UTC [cscc] Init -> INFO 015[0m Init CSCC
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.883 UTC [sccapi] deploySysCC -> INFO 016[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.889 UTC [qscc] Init -> INFO 017[0m Init QSCC
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.889 UTC [sccapi] deploySysCC -> INFO 018[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.889 UTC [sccapi] deploySysCC -> INFO 019[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.889 UTC [nodeCmd] serve -> INFO 01a[0m Deployed system chaincodes
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.890 UTC [discovery] NewService -> INFO 01b[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.890 UTC [nodeCmd] registerDiscoveryService -> INFO 01c[0m Discovery service activated
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.890 UTC [nodeCmd] serve -> INFO 01d[0m Starting peer with ID=[name:"peer0.bankb.example.com" ], network ID=[dev], address=[peer0.bankb.example.com:9051]
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.890 UTC [nodeCmd] serve -> INFO 01e[0m Started peer with ID=[name:"peer0.bankb.example.com" ], network ID=[dev], address=[peer0.bankb.example.com:9051]
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.890 UTC [kvledger] LoadPreResetHeight -> INFO 01f[0m Loading prereset height from path [/var/hyperledger/production/ledgersData/chains]
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.890 UTC [fsblkstorage] LoadPreResetHeight -> INFO 020[0m Loading Pre-reset heights
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.890 UTC [fsblkstorage] preRestHtFiles -> INFO 021[0m Dir [/var/hyperledger/production/ledgersData/chains/chains] missing... exiting
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.890 UTC [fsblkstorage] LoadPreResetHeight -> INFO 022[0m Pre-reset heights loaded
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:24.890 UTC [nodeCmd] func7 -> INFO 023[0m Starting profiling server with listenAddress = 0.0.0.0:6060
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Using sqlite database, connect to database in home (/etc/hyperledger/fabric-ca-server/fabric-ca-server.db) directory
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating SQLite database (/etc/hyperledger/fabric-ca-server/fabric-ca-server.db) if it does not exist...
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating users table if it does not exist
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating affiliations table if it does not exist
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating certificates table if it does not exist
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating credentials table if it does not exist
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating revocation_authority_info table if it does not exist
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating nonces table if it does not exist
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.088 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+[31mpeer0.banka.example.com    |[0m  Version: 1.4.3
+[31mpeer0.banka.example.com    |[0m  Commit SHA: b8c4a6a
+[31mpeer0.banka.example.com    |[0m  Go version: go1.11.5
+[31mpeer0.banka.example.com    |[0m  OS/Arch: linux/amd64
+[31mpeer0.banka.example.com    |[0m  Chaincode:
+[31mpeer0.banka.example.com    |[0m   Base Image Version: 0.4.15
+[31mpeer0.banka.example.com    |[0m   Base Docker Namespace: hyperledger
+[31mpeer0.banka.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[31mpeer0.banka.example.com    |[0m   Docker Namespace: hyperledger
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating properties table if it does not exist
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Successfully opened sqlite3 DB
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Initializing identity registry
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Initialized DB identity registry
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Checking database levels '&{Identity:0 Affiliation:0 Certificate:0 Credential:0 RAInfo:0 Nonce:0}' against server levels '&{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}'
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.090 UTC [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Migrating users table...
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.090 UTC [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Upgrade identity table to level 1
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.140 UTC [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating users table if it does not exist
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.189 UTC [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Upgrade identity table to level 2
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.189 UTC [peer] func1 -> INFO 006[0m Auto-detected peer address: 172.22.0.6:7051
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating users table if it does not exist
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.189 UTC [peer] func1 -> INFO 007[0m Returning peer0.banka.example.com:7051
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Migrating affiliation table...
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.189 UTC [peer] func1 -> INFO 008[0m Auto-detected peer address: 172.22.0.6:7051
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Upgrade affiliations table to level 1
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.189 UTC [peer] func1 -> INFO 009[0m Returning peer0.banka.example.com:7051
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating affiliations table if it does not exist
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.192 UTC [nodeCmd] serve -> INFO 00a[0m Starting peer with TLS enabled
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Upgrade certificates table...
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.195 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00b[0m Entering computeChaincodeEndpoint with peerHostname: peer0.banka.example.com
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Upgrade certificates table to level 1
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.195 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Exit with ccEndpoint: peer0.banka.example.com:7052
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Creating certificates table if it does not exist
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Migrating credentials table...
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Migrating nonces table...
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Migrating revocation_authority_info table...
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.197 UTC [sccapi] registerSysCC -> INFO 00d[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Loading identity table
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.201 UTC [sccapi] registerSysCC -> INFO 00e[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Loading identity 'admin'
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.201 UTC [sccapi] registerSysCC -> INFO 00f[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] DB: Getting identity admin
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.201 UTC [sccapi] registerSysCC -> INFO 010[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle,true) disabled
+[34morderer.example.com        |[0m [34m2019-11-14 09:17:25.063 UTC [localconfig] completeInitialization -> INFO 001[0m Kafka.Version unset, setting to 0.10.2.0
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.204 UTC [gossip.service] func1 -> INFO 011[0m Initialize gossip with endpoint peer0.banka.example.com:7051 and bootstrap set [peer1.banka.example.com:8051]
+[34morderer.example.com        |[0m [34m2019-11-14 09:17:25.095 UTC [orderer.common.server] prettyPrintStruct -> INFO 002[0m Orderer config values:
+[34morderer.example.com        |[0m 	General.LedgerType = "file"
+[34morderer.example.com        |[0m 	General.ListenAddress = "0.0.0.0"
+[34morderer.example.com        |[0m 	General.ListenPort = 7050
+[34morderer.example.com        |[0m 	General.TLS.Enabled = true
+[34morderer.example.com        |[0m 	General.TLS.PrivateKey = "/var/hyperledger/orderer/tls/server.key"
+[34morderer.example.com        |[0m 	General.TLS.Certificate = "/var/hyperledger/orderer/tls/server.crt"
+[34morderer.example.com        |[0m 	General.TLS.RootCAs = [/var/hyperledger/orderer/tls/ca.crt]
+[34morderer.example.com        |[0m 	General.TLS.ClientAuthRequired = false
+[34morderer.example.com        |[0m 	General.TLS.ClientRootCAs = []
+[34morderer.example.com        |[0m 	General.Cluster.ListenAddress = ""
+[34morderer.example.com        |[0m 	General.Cluster.ListenPort = 0
+[34morderer.example.com        |[0m 	General.Cluster.ServerCertificate = ""
+[34morderer.example.com        |[0m 	General.Cluster.ServerPrivateKey = ""
+[34morderer.example.com        |[0m 	General.Cluster.ClientCertificate = "/var/hyperledger/orderer/tls/server.crt"
+[34morderer.example.com        |[0m 	General.Cluster.ClientPrivateKey = "/var/hyperledger/orderer/tls/server.key"
+[34morderer.example.com        |[0m 	General.Cluster.RootCAs = [/var/hyperledger/orderer/tls/ca.crt]
+[34morderer.example.com        |[0m 	General.Cluster.DialTimeout = 5s
+[34morderer.example.com        |[0m 	General.Cluster.RPCTimeout = 7s
+[34morderer.example.com        |[0m 	General.Cluster.ReplicationBufferSize = 20971520
+[34morderer.example.com        |[0m 	General.Cluster.ReplicationPullTimeout = 5s
+[34morderer.example.com        |[0m 	General.Cluster.ReplicationRetryTimeout = 5s
+[34morderer.example.com        |[0m 	General.Cluster.ReplicationBackgroundRefreshInterval = 5m0s
+[34morderer.example.com        |[0m 	General.Cluster.ReplicationMaxRetries = 12
+[34morderer.example.com        |[0m 	General.Cluster.SendBufferSize = 10
+[34morderer.example.com        |[0m 	General.Cluster.CertExpirationWarningThreshold = 168h0m0s
+[34morderer.example.com        |[0m 	General.Cluster.TLSHandshakeTimeShift = 0s
+[34morderer.example.com        |[0m 	General.Keepalive.ServerMinInterval = 1m0s
+[34morderer.example.com        |[0m 	General.Keepalive.ServerInterval = 2h0m0s
+[34morderer.example.com        |[0m 	General.Keepalive.ServerTimeout = 20s
+[34morderer.example.com        |[0m 	General.ConnectionTimeout = 0s
+[34morderer.example.com        |[0m 	General.GenesisMethod = "file"
+[34morderer.example.com        |[0m 	General.GenesisProfile = "SampleInsecureSolo"
+[34morderer.example.com        |[0m 	General.SystemChannel = "test-system-channel-name"
+[34morderer.example.com        |[0m 	General.GenesisFile = "/var/hyperledger/orderer/orderer.genesis.block"
+[34morderer.example.com        |[0m 	General.Profile.Enabled = false
+[34morderer.example.com        |[0m 	General.Profile.Address = "0.0.0.0:6060"
+[34morderer.example.com        |[0m 	General.LocalMSPDir = "/var/hyperledger/orderer/msp"
+[34morderer.example.com        |[0m 	General.LocalMSPID = "OrdererMSP"
+[34morderer.example.com        |[0m 	General.BCCSP.ProviderName = "SW"
+[34morderer.example.com        |[0m 	General.BCCSP.SwOpts.SecLevel = 256
+[34morderer.example.com        |[0m 	General.BCCSP.SwOpts.HashFamily = "SHA2"
+[34morderer.example.com        |[0m 	General.BCCSP.SwOpts.Ephemeral = false
+[34morderer.example.com        |[0m 	General.BCCSP.SwOpts.FileKeystore.KeyStorePath = "/var/hyperledger/orderer/msp/keystore"
+[34morderer.example.com        |[0m 	General.BCCSP.SwOpts.DummyKeystore =
+[34morderer.example.com        |[0m 	General.BCCSP.SwOpts.InmemKeystore =
+[34morderer.example.com        |[0m 	General.BCCSP.PluginOpts =
+[34morderer.example.com        |[0m 	General.Authentication.TimeWindow = 15m0s
+[34morderer.example.com        |[0m 	General.Authentication.NoExpirationChecks = false
+[34morderer.example.com        |[0m 	FileLedger.Location = "/var/hyperledger/production/orderer"
+[34morderer.example.com        |[0m 	FileLedger.Prefix = "hyperledger-fabric-ordererledger"
+[34morderer.example.com        |[0m 	RAMLedger.HistorySize = 1000
+[34morderer.example.com        |[0m 	Kafka.Retry.ShortInterval = 5s
+[34morderer.example.com        |[0m 	Kafka.Retry.ShortTotal = 10m0s
+[34morderer.example.com        |[0m 	Kafka.Retry.LongInterval = 5m0s
+[34morderer.example.com        |[0m 	Kafka.Retry.LongTotal = 12h0m0s
+[34morderer.example.com        |[0m 	Kafka.Retry.NetworkTimeouts.DialTimeout = 10s
+[34morderer.example.com        |[0m 	Kafka.Retry.NetworkTimeouts.ReadTimeout = 10s
+[34morderer.example.com        |[0m 	Kafka.Retry.NetworkTimeouts.WriteTimeout = 10s
+[34morderer.example.com        |[0m 	Kafka.Retry.Metadata.RetryMax = 3
+[34morderer.example.com        |[0m 	Kafka.Retry.Metadata.RetryBackoff = 250ms
+[34morderer.example.com        |[0m 	Kafka.Retry.Producer.RetryMax = 3
+[34morderer.example.com        |[0m 	Kafka.Retry.Producer.RetryBackoff = 100ms
+[34morderer.example.com        |[0m 	Kafka.Retry.Consumer.RetryBackoff = 2s
+[34morderer.example.com        |[0m 	Kafka.Verbose = true
+[34morderer.example.com        |[0m 	Kafka.Version = 0.10.2.0
+[34morderer.example.com        |[0m 	Kafka.TLS.Enabled = false
+[34morderer.example.com        |[0m 	Kafka.TLS.PrivateKey = ""
+[34morderer.example.com        |[0m 	Kafka.TLS.Certificate = ""
+[34morderer.example.com        |[0m 	Kafka.TLS.RootCAs = []
+[34morderer.example.com        |[0m 	Kafka.TLS.ClientAuthRequired = false
+[34morderer.example.com        |[0m 	Kafka.TLS.ClientRootCAs = []
+[34morderer.example.com        |[0m 	Kafka.SASLPlain.Enabled = false
+[34morderer.example.com        |[0m 	Kafka.SASLPlain.User = ""
+[34morderer.example.com        |[0m 	Kafka.SASLPlain.Password = ""
+[34morderer.example.com        |[0m 	Kafka.Topic.ReplicationFactor = 1
+[34morderer.example.com        |[0m 	Debug.BroadcastTraceDir = ""
+[34morderer.example.com        |[0m 	Debug.DeliverTraceDir = ""
+[34morderer.example.com        |[0m 	Consensus = map[SnapDir:/var/hyperledger/production/orderer/etcdraft/snapshot WALDir:/var/hyperledger/production/orderer/etcdraft/wal]
+[34morderer.example.com        |[0m 	Operations.ListenAddress = "127.0.0.1:8443"
+[34morderer.example.com        |[0m 	Operations.TLS.Enabled = false
+[34morderer.example.com        |[0m 	Operations.TLS.PrivateKey = ""
+[34morderer.example.com        |[0m 	Operations.TLS.Certificate = ""
+[34morderer.example.com        |[0m 	Operations.TLS.RootCAs = []
+[34morderer.example.com        |[0m 	Operations.TLS.ClientAuthRequired = false
+[34morderer.example.com        |[0m 	Operations.TLS.ClientRootCAs = []
+[34morderer.example.com        |[0m 	Metrics.Provider = "disabled"
+[34morderer.example.com        |[0m 	Metrics.Statsd.Network = "udp"
+[34morderer.example.com        |[0m 	Metrics.Statsd.Address = "127.0.0.1:8125"
+[34morderer.example.com        |[0m 	Metrics.Statsd.WriteInterval = 30s
+[34morderer.example.com        |[0m 	Metrics.Statsd.Prefix = ""
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.212 UTC [gossip.gossip] NewGossipService -> INFO 012[0m Creating gossip service with self membership of Endpoint: peer0.banka.example.com:7051, InternalEndpoint: peer0.banka.example.com:7051, PKI-ID: 0d3f29d42708cfea32c117cc17dd4c61fd6bd69c71f951615ca979416c793228, Metadata: 
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Max enrollment value verification - User specified max enrollment: 0, CA max enrollment: -1
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.213 UTC [gossip.gossip] start -> INFO 013[0m Gossip instance peer0.banka.example.com:7051 started
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] DB: Add identity admin
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.216 UTC [sccapi] deploySysCC -> INFO 014[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Successfully added identity admin to the database
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.216 UTC [cscc] Init -> INFO 015[0m Init CSCC
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Registered identity: { Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:-1 Attrs:map[hf.Registrar.Roles:* hf.Registrar.DelegateRoles:* hf.Revoker:1 hf.IntermediateCA:1 hf.GenCRL:1 hf.Registrar.Attributes:* hf.AffiliationMgr:1]  }
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.216 UTC [sccapi] deploySysCC -> INFO 016[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Successfully loaded identity table
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.217 UTC [qscc] Init -> INFO 017[0m Init QSCC
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Loading affiliations table
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.217 UTC [sccapi] deploySysCC -> INFO 018[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] DB: Add affiliation org1
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.217 UTC [sccapi] deploySysCC -> INFO 019[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Affiliation 'org1' added
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.218 UTC [nodeCmd] serve -> INFO 01a[0m Deployed system chaincodes
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] DB: Add affiliation org1.department1
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.218 UTC [discovery] NewService -> INFO 01b[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Affiliation 'org1.department1' added
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.220 UTC [nodeCmd] registerDiscoveryService -> INFO 01c[0m Discovery service activated
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] DB: Add affiliation org1.department2
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.220 UTC [nodeCmd] serve -> INFO 01d[0m Starting peer with ID=[name:"peer0.banka.example.com" ], network ID=[dev], address=[peer0.banka.example.com:7051]
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Affiliation 'org1.department2' added
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.221 UTC [nodeCmd] serve -> INFO 01e[0m Started peer with ID=[name:"peer0.banka.example.com" ], network ID=[dev], address=[peer0.banka.example.com:7051]
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] DB: Add affiliation org2
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.221 UTC [kvledger] LoadPreResetHeight -> INFO 01f[0m Loading prereset height from path [/var/hyperledger/production/ledgersData/chains]
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Affiliation 'org2' added
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.221 UTC [fsblkstorage] LoadPreResetHeight -> INFO 020[0m Loading Pre-reset heights
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] DB: Add affiliation org2.department1
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.221 UTC [fsblkstorage] preRestHtFiles -> INFO 021[0m Dir [/var/hyperledger/production/ledgersData/chains/chains] missing... exiting
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Affiliation 'org2.department1' added
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.221 UTC [fsblkstorage] LoadPreResetHeight -> INFO 022[0m Pre-reset heights loaded
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Successfully loaded affiliations table
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.221 UTC [nodeCmd] func7 -> INFO 023[0m Starting profiling server with listenAddress = 0.0.0.0:6060
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] Initialized sqlite3 database at /etc/hyperledger/fabric-ca-server/fabric-ca-server.db
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Initializing enrollment signer
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] No key found in BCCSP keystore, attempting fallback
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] validating configuration
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] validate local profile
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] profile is valid
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] validate local profile
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] profile is valid
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] validate local profile
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] profile is valid
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] CA initialization successful
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Initializing Idemix issuer...
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] The issuer key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerPublicKey, secret key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerSecretKey
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Intializing revocation authority for issuer 'ca-bankb'
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Initialize Idemix issuer revocation key material
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] Idemix issuer revocation public and secret keys were generated for CA 'ca-bankb'
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] The revocation key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerRevocationPublicKey, private key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerRevocationPrivateKey
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Intializing nonce manager for issuer 'ca-bankb'
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] Home directory for default CA: /etc/hyperledger/fabric-ca-server
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] 1 CA instance(s) running on server
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] Operation Server Listening on 127.0.0.1:9443
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] TLS is enabled
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] TLS Certificate: /etc/hyperledger/fabric-ca-server-config/ca.bankb.example.com-cert.pem, TLS Key: /etc/hyperledger/fabric-ca-server-config/ebe260ad26a941047daf88bad52fd13df0d791488413f92ed6a8b9b248b3312f_sk
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [DEBUG] Client authentication type requested: noclientcert
+[32mca_peerbankb               |[0m 2019/11/14 09:17:23 [INFO] Listening on https://0.0.0.0:8054
+[34morderer.example.com        |[0m [34m2019-11-14 09:17:25.120 UTC [orderer.common.server] extractSysChanLastConfig -> INFO 003[0m Not bootstrapping because of 1 existing channels
+[34morderer.example.com        |[0m [34m2019-11-14 09:17:25.125 UTC [orderer.common.server] extractSysChanLastConfig -> INFO 004[0m System channel: name=testchainid, height=1, last config block number=0
+[34morderer.example.com        |[0m [34m2019-11-14 09:17:25.125 UTC [orderer.common.server] selectClusterBootBlock -> INFO 005[0m Cluster boot block is bootstrap (genesis) block; Blocks Header.Number system-channel=0, bootstrap=0
+[34morderer.example.com        |[0m [34m2019-11-14 09:17:25.140 UTC [orderer.common.cluster] loadVerifier -> INFO 006[0m Loaded verifier for channel testchainid from config block at index 0
+[34morderer.example.com        |[0m [34m2019-11-14 09:17:25.140 UTC [orderer.common.server] initializeServerConfig -> INFO 007[0m Starting orderer with TLS enabled
+[34morderer.example.com        |[0m [34m2019-11-14 09:17:25.149 UTC [orderer.common.server] initializeMultichannelRegistrar -> INFO 008[0m Not bootstrapping because of existing channels
+[34morderer.example.com        |[0m [34m2019-11-14 09:17:25.165 UTC [orderer.commmon.multichannel] Initialize -> INFO 009[0m Starting system channel 'testchainid' with genesis block hash d2fc14f34bb10dd5407f07a806f7ca96ca3c1ecf01b2618605e9610c6bd70b28 and orderer type solo
+[34morderer.example.com        |[0m [34m2019-11-14 09:17:25.168 UTC [orderer.common.server] Start -> INFO 00a[0m Starting orderer:
+[34morderer.example.com        |[0m  Version: 1.4.3
+[34morderer.example.com        |[0m  Commit SHA: b8c4a6a
+[34morderer.example.com        |[0m  Go version: go1.11.5
+[34morderer.example.com        |[0m  OS/Arch: linux/amd64
+[34morderer.example.com        |[0m [34m2019-11-14 09:17:25.168 UTC [orderer.common.server] Start -> INFO 00b[0m Beginning to serve requests
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.505 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+[36;1mpeer1.banka.example.com    |[0m  Version: 1.4.3
+[36;1mpeer1.banka.example.com    |[0m  Commit SHA: b8c4a6a
+[36;1mpeer1.banka.example.com    |[0m  Go version: go1.11.5
+[36;1mpeer1.banka.example.com    |[0m  OS/Arch: linux/amd64
+[36;1mpeer1.banka.example.com    |[0m  Chaincode:
+[36;1mpeer1.banka.example.com    |[0m   Base Image Version: 0.4.15
+[36;1mpeer1.banka.example.com    |[0m   Base Docker Namespace: hyperledger
+[36;1mpeer1.banka.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[36;1mpeer1.banka.example.com    |[0m   Docker Namespace: hyperledger
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.508 UTC [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.508 UTC [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.532 UTC [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.567 UTC [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.567 UTC [peer] func1 -> INFO 006[0m Auto-detected peer address: 172.22.0.5:8051
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.567 UTC [peer] func1 -> INFO 007[0m Returning peer1.banka.example.com:8051
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.567 UTC [peer] func1 -> INFO 008[0m Auto-detected peer address: 172.22.0.5:8051
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.568 UTC [peer] func1 -> INFO 009[0m Returning peer1.banka.example.com:8051
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.571 UTC [nodeCmd] serve -> INFO 00a[0m Starting peer with TLS enabled
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.573 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00b[0m Entering computeChaincodeEndpoint with peerHostname: peer1.banka.example.com
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.573 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Exit with ccEndpoint: peer1.banka.example.com:8052
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.575 UTC [sccapi] registerSysCC -> INFO 00d[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.575 UTC [sccapi] registerSysCC -> INFO 00e[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.575 UTC [sccapi] registerSysCC -> INFO 00f[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.575 UTC [sccapi] registerSysCC -> INFO 010[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle,true) disabled
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.579 UTC [gossip.service] func1 -> INFO 011[0m Initialize gossip with endpoint peer1.banka.example.com:8051 and bootstrap set [peer0.banka.example.com:7051]
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.585 UTC [gossip.gossip] NewGossipService -> INFO 012[0m Creating gossip service with self membership of Endpoint: peer1.banka.example.com:8051, InternalEndpoint: peer1.banka.example.com:8051, PKI-ID: 2ed3efe3953041578b4763cdd4ca60ee07375ed1de9d02277ce9318e24ab35c5, Metadata: 
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.586 UTC [gossip.gossip] start -> INFO 013[0m Gossip instance peer1.banka.example.com:8051 started
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.588 UTC [sccapi] deploySysCC -> INFO 014[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.588 UTC [cscc] Init -> INFO 015[0m Init CSCC
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.588 UTC [sccapi] deploySysCC -> INFO 016[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.589 UTC [qscc] Init -> INFO 017[0m Init QSCC
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.589 UTC [sccapi] deploySysCC -> INFO 018[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.589 UTC [sccapi] deploySysCC -> INFO 019[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.589 UTC [nodeCmd] serve -> INFO 01a[0m Deployed system chaincodes
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.590 UTC [discovery] NewService -> INFO 01b[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.590 UTC [nodeCmd] registerDiscoveryService -> INFO 01c[0m Discovery service activated
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.591 UTC [nodeCmd] serve -> INFO 01d[0m Starting peer with ID=[name:"peer1.banka.example.com" ], network ID=[dev], address=[peer1.banka.example.com:8051]
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.591 UTC [nodeCmd] serve -> INFO 01e[0m Started peer with ID=[name:"peer1.banka.example.com" ], network ID=[dev], address=[peer1.banka.example.com:8051]
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.591 UTC [kvledger] LoadPreResetHeight -> INFO 01f[0m Loading prereset height from path [/var/hyperledger/production/ledgersData/chains]
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.591 UTC [fsblkstorage] LoadPreResetHeight -> INFO 020[0m Loading Pre-reset heights
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.591 UTC [fsblkstorage] preRestHtFiles -> INFO 021[0m Dir [/var/hyperledger/production/ledgersData/chains/chains] missing... exiting
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.592 UTC [fsblkstorage] LoadPreResetHeight -> INFO 022[0m Pre-reset heights loaded
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:25.592 UTC [nodeCmd] func7 -> INFO 023[0m Starting profiling server with listenAddress = 0.0.0.0:6060
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.594 UTC [comm.grpc.server] 1 -> INFO 024[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:17:27.594Z grpc.peer_address=172.22.0.5:49436 grpc.peer_subject="CN=peer1.banka.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=36.849µs
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.598 UTC [comm.grpc.server] 1 -> INFO 025[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2019-11-14T09:17:35.594Z grpc.peer_address=172.22.0.5:49436 grpc.peer_subject="CN=peer1.banka.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=3.189809ms
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:25.599 UTC [comm.grpc.server] 1 -> INFO 026[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:17:27.599Z grpc.peer_address=172.22.0.5:49438 grpc.peer_subject="CN=peer1.banka.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=35.279µs
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:26.187 UTC [comm.grpc.server] 1 -> INFO 024[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:17:28.186Z grpc.peer_address=172.22.0.3:42052 grpc.peer_subject="CN=peer1.bankb.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=92.486µs
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 09:17:26.189 UTC [comm.grpc.server] 1 -> INFO 027[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.peer_address=172.22.0.4:36674 grpc.peer_subject="CN=peer0.bankb.example.com,L=San Francisco,ST=California,C=US" error=EOF grpc.code=Unknown grpc.call_duration=1.273650949s
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:26.192 UTC [comm.grpc.server] 1 -> INFO 025[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2019-11-14T09:17:36.188Z grpc.peer_address=172.22.0.3:42052 grpc.peer_subject="CN=peer1.bankb.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=4.547472ms
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 09:17:26.196 UTC [comm.grpc.server] 1 -> INFO 026[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:17:28.196Z grpc.peer_address=172.22.0.3:42054 grpc.peer_subject="CN=peer1.bankb.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=65.148µs
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:26.218 UTC [comm.grpc.server] 1 -> INFO 024[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:17:28.218Z grpc.peer_address=172.22.0.6:42194 grpc.peer_subject="CN=peer0.banka.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=94.704µs
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 09:17:26.221 UTC [comm.grpc.server] 1 -> INFO 027[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.peer_address=172.22.0.5:49438 grpc.peer_subject="CN=peer1.banka.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=621.555704ms
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:26.224 UTC [comm.grpc.server] 1 -> INFO 025[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2019-11-14T09:17:36.22Z grpc.peer_address=172.22.0.6:42194 grpc.peer_subject="CN=peer0.banka.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=3.840092ms
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 09:17:26.226 UTC [comm.grpc.server] 1 -> INFO 026[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2019-11-14T09:17:28.226Z grpc.peer_address=172.22.0.6:42196 grpc.peer_subject="CN=peer0.banka.example.com,L=San Francisco,ST=California,C=US" grpc.code=OK grpc.call_duration=43.51µs
+[36mca_peerbanka               |[0m 2019/11/14 09:32:22 [DEBUG] Cleaning up expired nonces for CA 'ca-banka'
+[32mca_peerbankb               |[0m 2019/11/14 09:32:23 [DEBUG] Cleaning up expired nonces for CA 'ca-bankb'
+[36mca_peerbanka               |[0m 2019/11/14 09:47:22 [DEBUG] Cleaning up expired nonces for CA 'ca-banka'
+[32mca_peerbankb               |[0m 2019/11/14 09:47:23 [DEBUG] Cleaning up expired nonces for CA 'ca-bankb'
+[36mca_peerbanka               |[0m 2019/11/14 10:02:22 [DEBUG] Cleaning up expired nonces for CA 'ca-banka'
+[32mca_peerbankb               |[0m 2019/11/14 10:02:23 [DEBUG] Cleaning up expired nonces for CA 'ca-bankb'
+[36mca_peerbanka               |[0m 2019/11/14 10:17:22 [DEBUG] Cleaning up expired nonces for CA 'ca-banka'
+[32mca_peerbankb               |[0m 2019/11/14 10:17:23 [DEBUG] Cleaning up expired nonces for CA 'ca-bankb'
+[36mca_peerbanka               |[0m 2019/11/14 10:32:22 [DEBUG] Cleaning up expired nonces for CA 'ca-banka'
+[32mca_peerbankb               |[0m 2019/11/14 10:32:23 [DEBUG] Cleaning up expired nonces for CA 'ca-bankb'
+[36mca_peerbanka               |[0m 2019/11/14 10:47:22 [DEBUG] Cleaning up expired nonces for CA 'ca-banka'
+[32mca_peerbankb               |[0m 2019/11/14 10:47:23 [DEBUG] Cleaning up expired nonces for CA 'ca-bankb'
+[34morderer.example.com        |[0m [34m2019-11-14 10:55:50.782 UTC [orderer.common.server] handleSignals -> INFO 00c[0m Received signal: 15 (terminated)
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 10:55:50.830 UTC [nodeCmd] handleSignals -> INFO 028[0m Received signal: 15 (terminated)
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 10:55:50.832 UTC [gossip.gossip] Stop -> INFO 029[0m Stopping gossip
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 10:55:50.832 UTC [gossip.discovery] Stop -> INFO 02a[0m Stopping
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 10:55:50.832 UTC [gossip.discovery] Stop -> INFO 02b[0m Stopped
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 10:55:50.832 UTC [gossip.comm] Stop -> INFO 02c[0m Stopping
+[31mpeer0.banka.example.com    |[0m [34m2019-11-14 10:55:50.832 UTC [gossip.comm] Stop -> INFO 02d[0m Stopped
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 10:55:50.838 UTC [comm.grpc.server] 1 -> INFO 027[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.peer_address=172.22.0.6:42196 grpc.peer_subject="CN=peer0.banka.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=1h38m24.611459137s
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 10:55:50.842 UTC [nodeCmd] handleSignals -> INFO 027[0m Received signal: 15 (terminated)
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 10:55:50.842 UTC [gossip.gossip] Stop -> INFO 028[0m Stopping gossip
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 10:55:50.842 UTC [gossip.discovery] Stop -> INFO 029[0m Stopping
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 10:55:50.842 UTC [gossip.discovery] Stop -> INFO 02a[0m Stopped
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 10:55:50.842 UTC [gossip.comm] Stop -> INFO 02b[0m Stopping
+[35mpeer0.bankb.example.com    |[0m [34m2019-11-14 10:55:50.842 UTC [gossip.comm] Stop -> INFO 02c[0m Stopped
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 10:55:50.876 UTC [nodeCmd] handleSignals -> INFO 028[0m Received signal: 15 (terminated)
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 10:55:50.876 UTC [gossip.gossip] Stop -> INFO 029[0m Stopping gossip
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 10:55:50.876 UTC [gossip.discovery] Stop -> INFO 02a[0m Stopping
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 10:55:50.876 UTC [gossip.discovery] Stop -> INFO 02b[0m Stopped
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 10:55:50.876 UTC [gossip.comm] Stop -> INFO 02c[0m Stopping
+[36;1mpeer1.banka.example.com    |[0m [34m2019-11-14 10:55:50.876 UTC [gossip.comm] Stop -> INFO 02d[0m Stopped
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 10:55:50.900 UTC [nodeCmd] handleSignals -> INFO 028[0m Received signal: 15 (terminated)
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 10:55:50.900 UTC [gossip.gossip] Stop -> INFO 029[0m Stopping gossip
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 10:55:50.900 UTC [gossip.discovery] Stop -> INFO 02a[0m Stopping
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 10:55:50.900 UTC [gossip.discovery] Stop -> INFO 02b[0m Stopped
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 10:55:50.900 UTC [gossip.comm] Stop -> INFO 02c[0m Stopping
+[33mpeer1.bankb.example.com    |[0m [34m2019-11-14 10:55:50.900 UTC [gossip.comm] Stop -> INFO 02d[0m Stopped
+[31mpeer0.banka.example.com exited with code 0
+[0m[35mpeer0.bankb.example.com exited with code 0
+[0m[34morderer.example.com exited with code 0
+[0m[36;1mpeer1.banka.example.com exited with code 0
+[0m[33mpeer1.bankb.example.com exited with code 0
+[0m[32mca_peerbankb exited with code 137
+[0m[36mca_peerbanka exited with code 137
+[0m

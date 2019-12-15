@@ -1,0 +1,60 @@
+{
+    "name": "bankchain-bank${ORG}",
+    "version": "1.0.0",
+    "client": {
+        "organization": "bank${ORG}",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                }
+            }
+        }
+    },
+    "organizations": {
+        "bank${ORG}": {
+            "mspid": "bank${ORG}MSP",
+            "peers": [
+                "peer0.bank${ORG}.example.com",
+                "peer1.bank${ORG}.example.com"
+            ],
+            "certificateAuthorities": [
+                "ca.bank${ORG}.example.com"
+            ]
+        }
+    },
+    "peers": {
+        "peer0.bank${ORG}.example.com": {
+            "url": "grpcs://localhost:${P0PORT}",
+            "tlsCACerts": {
+                "pem": "${PEERPEM}"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer0.bank${ORG}.example.com",
+                "hostnameOverride": "peer0.bank${ORG}.example.com"
+            }
+        },
+        "peer1.bank${ORG}.example.com": {
+            "url": "grpcs://localhost:${P1PORT}",
+            "tlsCACerts": {
+                "pem": "${PEERPEM}"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer1.bank${ORG}.example.com",
+                "hostnameOverride": "peer1.bank${ORG}.example.com"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "ca.bank${ORG}.example.com": {
+            "url": "https://localhost:${CAPORT}",
+            "caName": "ca-bank${ORG}",
+            "tlsCACerts": {
+                "pem": "${CAPEM}"
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+    }
+}

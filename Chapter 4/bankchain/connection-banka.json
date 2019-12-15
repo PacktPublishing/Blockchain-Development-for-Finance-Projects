@@ -1,0 +1,60 @@
+{
+    "name": "bankchain-banka",
+    "version": "1.0.0",
+    "client": {
+        "organization": "banka",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                }
+            }
+        }
+    },
+    "organizations": {
+        "banka": {
+            "mspid": "bankaMSP",
+            "peers": [
+                "peer0.banka.example.com",
+                "peer1.banka.example.com"
+            ],
+            "certificateAuthorities": [
+                "ca.banka.example.com"
+            ]
+        }
+    },
+    "peers": {
+        "peer0.banka.example.com": {
+            "url": "grpcs://localhost:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICXDCCAgKgAwIBAgIRAMWhpzv8NrXf2ert+OS10NgwCgYIKoZIzj0EAwIweDEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xGjAYBgNVBAoTEWJhbmthLmV4YW1wbGUuY29tMSAwHgYDVQQDExd0\nbHNjYS5iYW5rYS5leGFtcGxlLmNvbTAeFw0xOTEyMTUwOTIyMDBaFw0yOTEyMTIw\nOTIyMDBaMHgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYD\nVQQHEw1TYW4gRnJhbmNpc2NvMRowGAYDVQQKExFiYW5rYS5leGFtcGxlLmNvbTEg\nMB4GA1UEAxMXdGxzY2EuYmFua2EuZXhhbXBsZS5jb20wWTATBgcqhkjOPQIBBggq\nhkjOPQMBBwNCAAQM+vEPuUGY+dvGb0KNe5hmGDTQQT+W35E1pXjkIXwUP60ayW3j\nD6aGf0nIQ2Bh+4KTT4qup6qPRBYbs0+yQ+ydo20wazAOBgNVHQ8BAf8EBAMCAaYw\nHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMA8GA1UdEwEB/wQFMAMBAf8w\nKQYDVR0OBCIEIHSu502uGltTrvndEfy9qughQX1U3LfNHA+iOqh1i4XtMAoGCCqG\nSM49BAMCA0gAMEUCIQDAi+weNpS0NfNJgcp73xa1HWAVHQ+i6IEUl17lftcKHAIg\neqGzME93QQAAgHbLGLYXU/4X7GYGeZkZCUnOJaczhmE=\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer0.banka.example.com",
+                "hostnameOverride": "peer0.banka.example.com"
+            }
+        },
+        "peer1.banka.example.com": {
+            "url": "grpcs://localhost:8051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICXDCCAgKgAwIBAgIRAMWhpzv8NrXf2ert+OS10NgwCgYIKoZIzj0EAwIweDEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xGjAYBgNVBAoTEWJhbmthLmV4YW1wbGUuY29tMSAwHgYDVQQDExd0\nbHNjYS5iYW5rYS5leGFtcGxlLmNvbTAeFw0xOTEyMTUwOTIyMDBaFw0yOTEyMTIw\nOTIyMDBaMHgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYD\nVQQHEw1TYW4gRnJhbmNpc2NvMRowGAYDVQQKExFiYW5rYS5leGFtcGxlLmNvbTEg\nMB4GA1UEAxMXdGxzY2EuYmFua2EuZXhhbXBsZS5jb20wWTATBgcqhkjOPQIBBggq\nhkjOPQMBBwNCAAQM+vEPuUGY+dvGb0KNe5hmGDTQQT+W35E1pXjkIXwUP60ayW3j\nD6aGf0nIQ2Bh+4KTT4qup6qPRBYbs0+yQ+ydo20wazAOBgNVHQ8BAf8EBAMCAaYw\nHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMA8GA1UdEwEB/wQFMAMBAf8w\nKQYDVR0OBCIEIHSu502uGltTrvndEfy9qughQX1U3LfNHA+iOqh1i4XtMAoGCCqG\nSM49BAMCA0gAMEUCIQDAi+weNpS0NfNJgcp73xa1HWAVHQ+i6IEUl17lftcKHAIg\neqGzME93QQAAgHbLGLYXU/4X7GYGeZkZCUnOJaczhmE=\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer1.banka.example.com",
+                "hostnameOverride": "peer1.banka.example.com"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "ca.banka.example.com": {
+            "url": "https://localhost:7054",
+            "caName": "ca-banka",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICVjCCAfygAwIBAgIRAKIzvkALUAJ9nLeuWgTMHZEwCgYIKoZIzj0EAwIwdTEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xGjAYBgNVBAoTEWJhbmthLmV4YW1wbGUuY29tMR0wGwYDVQQDExRj\nYS5iYW5rYS5leGFtcGxlLmNvbTAeFw0xOTEyMTUwOTIyMDBaFw0yOTEyMTIwOTIy\nMDBaMHUxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQH\nEw1TYW4gRnJhbmNpc2NvMRowGAYDVQQKExFiYW5rYS5leGFtcGxlLmNvbTEdMBsG\nA1UEAxMUY2EuYmFua2EuZXhhbXBsZS5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMB\nBwNCAAQNEZdV3Z044OiJLzB74yST8iE4DyKFqg7J/DbSbdBW3luUEOEGGyDvo7Wp\nNmqxjMF8hl6kcd3oIcyA5gaKE2ido20wazAOBgNVHQ8BAf8EBAMCAaYwHQYDVR0l\nBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMA8GA1UdEwEB/wQFMAMBAf8wKQYDVR0O\nBCIEIP7urjhCB4o0Jk7S1vK1N3rbOIti+NghULgHHQ9a8V6yMAoGCCqGSM49BAMC\nA0gAMEUCIQCXsCDpoQey8YrmEg9Or0w1ZPf3zYyo6nbFQWAn2M6L3QIgKj2bp1O2\nUHsrX0X0TQuYb1Wne2KvNK7+Z2zrKm7/QQo=\n-----END CERTIFICATE-----\n"
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+    }
+}

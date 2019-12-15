@@ -1,0 +1,60 @@
+{
+    "name": "bankchain-bankb",
+    "version": "1.0.0",
+    "client": {
+        "organization": "bankb",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                }
+            }
+        }
+    },
+    "organizations": {
+        "bankb": {
+            "mspid": "bankbMSP",
+            "peers": [
+                "peer0.bankb.example.com",
+                "peer1.bankb.example.com"
+            ],
+            "certificateAuthorities": [
+                "ca.bankb.example.com"
+            ]
+        }
+    },
+    "peers": {
+        "peer0.bankb.example.com": {
+            "url": "grpcs://localhost:9051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICWjCCAgGgAwIBAgIQfcCY8aV7+WUGE/YSKqf9gzAKBggqhkjOPQQDAjB4MQsw\nCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy\nYW5jaXNjbzEaMBgGA1UEChMRYmFua2IuZXhhbXBsZS5jb20xIDAeBgNVBAMTF3Rs\nc2NhLmJhbmtiLmV4YW1wbGUuY29tMB4XDTE5MTIxNTA5MjIwMFoXDTI5MTIxMjA5\nMjIwMFoweDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNV\nBAcTDVNhbiBGcmFuY2lzY28xGjAYBgNVBAoTEWJhbmtiLmV4YW1wbGUuY29tMSAw\nHgYDVQQDExd0bHNjYS5iYW5rYi5leGFtcGxlLmNvbTBZMBMGByqGSM49AgEGCCqG\nSM49AwEHA0IABJLQZ2JSbalOL9sajB6Otxas0o6DS1goFbtE4NwQBCnBBs13s+Uj\nukMw/zOQj8iWRYVzAqPn9D8Za+oJzFXcE5KjbTBrMA4GA1UdDwEB/wQEAwIBpjAd\nBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/BAUwAwEB/zAp\nBgNVHQ4EIgQgp2jYPGwnDSQkkXGqAFawQwwu31vnoOIwnMQp6UDeQVAwCgYIKoZI\nzj0EAwIDRwAwRAIgX4eO+V/VH4Y9VBErLw9E5vNcv/5ilWr3L6eO38N1OxECIA4g\nkm7bjwI9NycoXGUZcdXLBKjcq7jH7dIwmxx2uRk+\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer0.bankb.example.com",
+                "hostnameOverride": "peer0.bankb.example.com"
+            }
+        },
+        "peer1.bankb.example.com": {
+            "url": "grpcs://localhost:10051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICWjCCAgGgAwIBAgIQfcCY8aV7+WUGE/YSKqf9gzAKBggqhkjOPQQDAjB4MQsw\nCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy\nYW5jaXNjbzEaMBgGA1UEChMRYmFua2IuZXhhbXBsZS5jb20xIDAeBgNVBAMTF3Rs\nc2NhLmJhbmtiLmV4YW1wbGUuY29tMB4XDTE5MTIxNTA5MjIwMFoXDTI5MTIxMjA5\nMjIwMFoweDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNV\nBAcTDVNhbiBGcmFuY2lzY28xGjAYBgNVBAoTEWJhbmtiLmV4YW1wbGUuY29tMSAw\nHgYDVQQDExd0bHNjYS5iYW5rYi5leGFtcGxlLmNvbTBZMBMGByqGSM49AgEGCCqG\nSM49AwEHA0IABJLQZ2JSbalOL9sajB6Otxas0o6DS1goFbtE4NwQBCnBBs13s+Uj\nukMw/zOQj8iWRYVzAqPn9D8Za+oJzFXcE5KjbTBrMA4GA1UdDwEB/wQEAwIBpjAd\nBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/BAUwAwEB/zAp\nBgNVHQ4EIgQgp2jYPGwnDSQkkXGqAFawQwwu31vnoOIwnMQp6UDeQVAwCgYIKoZI\nzj0EAwIDRwAwRAIgX4eO+V/VH4Y9VBErLw9E5vNcv/5ilWr3L6eO38N1OxECIA4g\nkm7bjwI9NycoXGUZcdXLBKjcq7jH7dIwmxx2uRk+\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer1.bankb.example.com",
+                "hostnameOverride": "peer1.bankb.example.com"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "ca.bankb.example.com": {
+            "url": "https://localhost:8054",
+            "caName": "ca-bankb",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICVjCCAfygAwIBAgIRAL9KDxSSBkXOIpw5rxK9saAwCgYIKoZIzj0EAwIwdTEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xGjAYBgNVBAoTEWJhbmtiLmV4YW1wbGUuY29tMR0wGwYDVQQDExRj\nYS5iYW5rYi5leGFtcGxlLmNvbTAeFw0xOTEyMTUwOTIyMDBaFw0yOTEyMTIwOTIy\nMDBaMHUxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQH\nEw1TYW4gRnJhbmNpc2NvMRowGAYDVQQKExFiYW5rYi5leGFtcGxlLmNvbTEdMBsG\nA1UEAxMUY2EuYmFua2IuZXhhbXBsZS5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMB\nBwNCAAQhjMY/I11/u8mxS2BiMz6Wq5NkK8OM9t1Dng3+gTH3UcOLEqftT/dW18jO\n2yU41xrA0NlSPDmusDq/Yl9uy5XBo20wazAOBgNVHQ8BAf8EBAMCAaYwHQYDVR0l\nBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMA8GA1UdEwEB/wQFMAMBAf8wKQYDVR0O\nBCIEIDS9y+kz8IGhVHH7z1fd7qO0qxFYxr2/KXDhv4K9y/PnMAoGCCqGSM49BAMC\nA0gAMEUCIQDBlRUSXQDU9JVeUTKdZfyifIvG1e5SMSqOHYlI48uSXgIgNQUwBrJm\nJzMZMww848zFrZg0u11d7QO0NeGdlnOJt1M=\n-----END CERTIFICATE-----\n"
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+    }
+}

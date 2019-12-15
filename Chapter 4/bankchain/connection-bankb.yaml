@@ -1,0 +1,88 @@
+---
+name: bankchain-bankb
+version: 1.0.0
+client:
+  organization: bankb
+  connection:
+    timeout:
+      peer:
+        endorser: '300'
+organizations:
+  bankb:
+    mspid: bankbMSP
+    peers:
+    - peer0.bankb.example.com
+    - peer1.bankb.example.com
+    certificateAuthorities:
+    - ca.bankb.example.com
+peers:
+  peer0.bankb.example.com:
+    url: grpcs://localhost:9051
+    tlsCACerts:
+      pem: |
+        -----BEGIN CERTIFICATE-----
+        MIICWjCCAgGgAwIBAgIQfcCY8aV7+WUGE/YSKqf9gzAKBggqhkjOPQQDAjB4MQsw
+        CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+        YW5jaXNjbzEaMBgGA1UEChMRYmFua2IuZXhhbXBsZS5jb20xIDAeBgNVBAMTF3Rs
+        c2NhLmJhbmtiLmV4YW1wbGUuY29tMB4XDTE5MTIxNTA5MjIwMFoXDTI5MTIxMjA5
+        MjIwMFoweDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNV
+        BAcTDVNhbiBGcmFuY2lzY28xGjAYBgNVBAoTEWJhbmtiLmV4YW1wbGUuY29tMSAw
+        HgYDVQQDExd0bHNjYS5iYW5rYi5leGFtcGxlLmNvbTBZMBMGByqGSM49AgEGCCqG
+        SM49AwEHA0IABJLQZ2JSbalOL9sajB6Otxas0o6DS1goFbtE4NwQBCnBBs13s+Uj
+        ukMw/zOQj8iWRYVzAqPn9D8Za+oJzFXcE5KjbTBrMA4GA1UdDwEB/wQEAwIBpjAd
+        BgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/BAUwAwEB/zAp
+        BgNVHQ4EIgQgp2jYPGwnDSQkkXGqAFawQwwu31vnoOIwnMQp6UDeQVAwCgYIKoZI
+        zj0EAwIDRwAwRAIgX4eO+V/VH4Y9VBErLw9E5vNcv/5ilWr3L6eO38N1OxECIA4g
+        km7bjwI9NycoXGUZcdXLBKjcq7jH7dIwmxx2uRk+
+        -----END CERTIFICATE-----
+        
+    grpcOptions:
+      ssl-target-name-override: peer0.bankb.example.com
+      hostnameOverride: peer0.bankb.example.com
+  peer1.orgb.example.com:
+    url: grpcs://localhost:10051
+    tlsCACerts:
+      pem: |
+        -----BEGIN CERTIFICATE-----
+        MIICWjCCAgGgAwIBAgIQfcCY8aV7+WUGE/YSKqf9gzAKBggqhkjOPQQDAjB4MQsw
+        CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+        YW5jaXNjbzEaMBgGA1UEChMRYmFua2IuZXhhbXBsZS5jb20xIDAeBgNVBAMTF3Rs
+        c2NhLmJhbmtiLmV4YW1wbGUuY29tMB4XDTE5MTIxNTA5MjIwMFoXDTI5MTIxMjA5
+        MjIwMFoweDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNV
+        BAcTDVNhbiBGcmFuY2lzY28xGjAYBgNVBAoTEWJhbmtiLmV4YW1wbGUuY29tMSAw
+        HgYDVQQDExd0bHNjYS5iYW5rYi5leGFtcGxlLmNvbTBZMBMGByqGSM49AgEGCCqG
+        SM49AwEHA0IABJLQZ2JSbalOL9sajB6Otxas0o6DS1goFbtE4NwQBCnBBs13s+Uj
+        ukMw/zOQj8iWRYVzAqPn9D8Za+oJzFXcE5KjbTBrMA4GA1UdDwEB/wQEAwIBpjAd
+        BgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/BAUwAwEB/zAp
+        BgNVHQ4EIgQgp2jYPGwnDSQkkXGqAFawQwwu31vnoOIwnMQp6UDeQVAwCgYIKoZI
+        zj0EAwIDRwAwRAIgX4eO+V/VH4Y9VBErLw9E5vNcv/5ilWr3L6eO38N1OxECIA4g
+        km7bjwI9NycoXGUZcdXLBKjcq7jH7dIwmxx2uRk+
+        -----END CERTIFICATE-----
+        
+    grpcOptions:
+      ssl-target-name-override: peer1.bankb.example.com
+      hostnameOverride: peer1.bankb.example.com
+certificateAuthorities:
+  ca.bankb.example.com:
+    url: https://localhost:8054
+    caName: ca-bankb
+    tlsCACerts:
+      pem: |
+        -----BEGIN CERTIFICATE-----
+        MIICVjCCAfygAwIBAgIRAL9KDxSSBkXOIpw5rxK9saAwCgYIKoZIzj0EAwIwdTEL
+        MAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG
+        cmFuY2lzY28xGjAYBgNVBAoTEWJhbmtiLmV4YW1wbGUuY29tMR0wGwYDVQQDExRj
+        YS5iYW5rYi5leGFtcGxlLmNvbTAeFw0xOTEyMTUwOTIyMDBaFw0yOTEyMTIwOTIy
+        MDBaMHUxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQH
+        Ew1TYW4gRnJhbmNpc2NvMRowGAYDVQQKExFiYW5rYi5leGFtcGxlLmNvbTEdMBsG
+        A1UEAxMUY2EuYmFua2IuZXhhbXBsZS5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMB
+        BwNCAAQhjMY/I11/u8mxS2BiMz6Wq5NkK8OM9t1Dng3+gTH3UcOLEqftT/dW18jO
+        2yU41xrA0NlSPDmusDq/Yl9uy5XBo20wazAOBgNVHQ8BAf8EBAMCAaYwHQYDVR0l
+        BBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMA8GA1UdEwEB/wQFMAMBAf8wKQYDVR0O
+        BCIEIDS9y+kz8IGhVHH7z1fd7qO0qxFYxr2/KXDhv4K9y/PnMAoGCCqGSM49BAMC
+        A0gAMEUCIQDBlRUSXQDU9JVeUTKdZfyifIvG1e5SMSqOHYlI48uSXgIgNQUwBrJm
+        JzMZMww848zFrZg0u11d7QO0NeGdlnOJt1M=
+        -----END CERTIFICATE-----
+        
+    httpOptions:
+      verify: false
