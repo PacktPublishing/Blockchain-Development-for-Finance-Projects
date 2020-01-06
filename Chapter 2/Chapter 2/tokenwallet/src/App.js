@@ -59,8 +59,8 @@ class App extends Component {
 	
     setNetwork = () => {
         let networkName,that = this;
-
-        this.web3.version.getNetwork(function (err, networkId) {
+		
+        this.web3.eth.net.getId(function (err, networkId) {
             switch (networkId) {
                 case "1":
                     networkName = "Main";
@@ -146,8 +146,8 @@ class App extends Component {
 
     setGasPrice = () => {
         this.web3.eth.getGasPrice((err,price) => {
-            price = this.web3.fromWei(price,'gwei');
-            if(!err) this.setState({defaultGasPrice: price.toNumber()})
+            var Gasprice = this.web3.utils.fromWei(price,'gwei');
+            if(!err) this.setState({defaultGasPrice: Gasprice})
         	});
     	};
 
@@ -184,11 +184,11 @@ class App extends Component {
        		var contract;
 			if (this.state.fields.metadata)
 				{
-		 			contract = this.web3.eth.contract(this.state.transferDetail721.abi).at(this.state.transferDetail721.address);
+		 			contract = new this.web3.eth.Contract(this.state.transferDetail721.abi,this.state.transferDetail721.address);
 				}
 			else
 				{
-         			contract = this.web3.eth.contract(this.state.transferDetail20.abi).at(this.state.transferDetail20.address);
+         			contract = new this.web3.eth.Contract(this.state.transferDetail20.abi,this.state.transferDetail20.address);
 				}
 		
 			let app = this; 
@@ -202,9 +202,9 @@ class App extends Component {
 		 			tokenId = this.state.fields.tokenid;
 				}
 			else
+
 				{
-		 			amount = this.state.fields.amount  + 'e' + this.state.transferDetail20.decimal;	
-		 			amount = new this.web3.BigNumber(amount).toNumber();
+					amount = this.state.fields.amount*(Math.pow(10,this.state.transferDetail20.decimal));			
 				}	
         
 			
@@ -212,8 +212,8 @@ class App extends Component {
 			let account = this.state.account;
         
 			if(metadata)
-				{
-					contract.transferNFT(account,receiver, tokenId, metadata, (err,response)=>{
+				{ 
+					contract.methods.transferNFT(account,receiver, tokenId, metadata).send({from: this.web3.eth.defaultAccount}).then(function(response,err){
 					
 					if(response) {
                         		    console.log(response);
@@ -231,7 +231,7 @@ class App extends Component {
 				}
 						 else
 								{
-									contract.transferFrom(account,receiver, amount, (err,response)=>{
+									contract.methods.transfer(receiver, amount).send({from: this.web3.eth.defaultAccount}).then(function(response,err){
             
 									if(response) {
                                 					console.log(response);
@@ -264,11 +264,11 @@ class App extends Component {
         var contract;
 		if (this.state.fields.metadata)
 		{
-		contract = this.web3.eth.contract(this.state.mintDetail721.abi).at(this.state.mintDetail721.address);
+		contract = new this.web3.eth.Contract(this.state.mintDetail721.abi, this.state.mintDetail721.address);
 		}
 		else
 		{
-        contract = this.web3.eth.contract(this.state.mintDetail20.abi).at(this.state.mintDetail20.address);
+        contract = new this.web3.eth.Contract(this.state.mintDetail20.abi, this.state.mintDetail20.address);
 		}
 		
         let app = this; 
@@ -281,8 +281,7 @@ class App extends Component {
 		}
 		else
 		{
-		amount = this.state.fields.amount  + 'e' + this.state.mintDetail20.decimal;	
-		amount = new this.web3.BigNumber(amount).toNumber();
+		amount = this.state.fields.amount*(Math.pow(10,this.state.mintDetail20.decimal));	
 		}	
         
         let receiver = this.state.fields.receiver.toString();
@@ -290,7 +289,8 @@ class App extends Component {
         		
 		if(metadata)
 		{
-		contract.createNFT(receiver, metadata, (err,response)=>{
+			
+		contract.methods.createNFT(receiver, metadata).send({from: this.web3.eth.defaultAccount}).then(function(response){
 			if(response) {
                                 console.log(response);
 								app.resetApp();
@@ -300,14 +300,12 @@ class App extends Component {
 									tx721: response.tx721,
                                     inProgress: false
                                 });
- 						}else{
-                				console.log(err);
-            				}
+ 						}
 						});
 		}
 		else
 		{
-			contract.mint(receiver, amount, (err,response)=>{
+			contract.methods.mint(receiver, amount).send({from: this.web3.eth.defaultAccount}).then(function(response){
             
 			if(response) {
                                 console.log(response);
@@ -319,9 +317,7 @@ class App extends Component {
 									tx721: response.tx721,
                                     inProgress: false
                                 });
-             }else{
-                console.log(err);
-            }
+             }
         });
 		}    
 	};
@@ -334,16 +330,17 @@ class App extends Component {
             inProgress: true
         });
 		
-		//this.web3.eth.defaultAccount = window.web3.defaultAccount;
-		console.log(this.state.approveDetail721.address);
+		
         var contract;
 		if (this.state.approveDetail721.abi)
 		{
-		contract = this.web3.eth.contract(this.state.approveDetail721.abi).at(this.state.approveDetail721.address);
+		contract = new this.web3.eth.Contract(this.state.approveDetail721.abi,this.state.approveDetail721.address);
+			
 		}
 		else
 		{
-        contract = this.web3.eth.contract(this.state.approveDetail20.abi).at(this.state.approveDetail20.address);
+        contract = new this.web3.eth.Contract(this.state.approveDetail20.abi,this.state.approveDetail20.address);
+		
 		}
 
 		let app = this;
@@ -352,12 +349,13 @@ class App extends Component {
 	
 		if (this.state.approveDetail20.abi)
 		{
-		let amount = this.state.fields.amount  + 'e' + this.state.approveDetail20.decimal;	
-		amount = new this.web3.BigNumber(amount).toNumber();
-		contract.approve(receiver, amount, (err,response)=>{
+		let amount = this.state.fields.amount* (Math.pow(10,this.state.approveDetail20.decimal));	
+		
+		contract.methods.approve(receiver, amount).send({from: this.web3.eth.defaultAccount}).then(function(response){
+		
  
 			if(response) {
-                                console.log(response);
+                                
 	
                                 app.resetApp();
 
@@ -366,8 +364,6 @@ class App extends Component {
 									tx721: response.tx721,
                                     inProgress: false
                                 });
-            }else{
-                console.log(err);
             }
         });
 	
@@ -375,7 +371,7 @@ class App extends Component {
 		else
 		{
 		let tokenid = this.state.fields.tokenid;
-		contract.approve(receiver, tokenid , (err,response)=>{
+		contract.methods.approve(receiver, tokenid).send({from: this.web3.eth.defaultAccount}).then(function(response){
  
 			if(response) {
                                 console.log(response);
@@ -387,8 +383,6 @@ class App extends Component {
 									tx721: response.tx721,
                                     inProgress: false
                                 });
-            }else{
-                console.log(err);
             }
         });
 	
@@ -429,14 +423,15 @@ class App extends Component {
         this.setGasPrice();
         
         Tokens20.forEach((token) => {
-            let contract = this.web3.eth.contract(token.abi);
-            let erc20Token = contract.at(token.address);
-
-            erc20Token.balanceOf(account,function (err,response) {
-                if(!err) {
+            let erc20Token = new this.web3.eth.Contract(token.abi,token.address);
+			
+			
+            erc20Token.methods.balanceOf(account).call().then(function(response){
+	
+                if(response) {
                     let decimal = token.decimal;
                     let precision = '1e' + decimal;
-                    let balance = response.c[0] / precision;
+                    let balance = response / precision;
                     let name = token.name;
                     let symbol = token.symbol;
                     let icon = token.icon;
@@ -466,23 +461,23 @@ class App extends Component {
 		
 		
 		        Tokens721.forEach((token721) => {
-            let contract = this.web3.eth.contract(token721.abi);
-            let erc721Token = contract.at(token721.address);
+            let erc721Token = new this.web3.eth.Contract(token721.abi,token721.address);
+            
 
-               erc721Token.MDTrack(account,function (err,response) {
-				if(!err) {
+               erc721Token.methods.MDTrack(account).call().then(function (response) {
+				if(response) {
                     let name = token721.name;
                     let symbol = token721.symbol;
                     let icon = token721.icon;
                     let abi = token721.abi;
                     let address = token721.address;
-					let tokenid = response.c[0];
+					let tokenid = response;
 						
                     tokenid = tokenid >= 0 ? tokenid : 0;
 					if(tokenid!==0)
 					{
-					erc721Token.tokenURI(tokenid,function (err,response) {
-						if(!err) {
+					erc721Token.methods.tokenURI(tokenid).call().then(function (response) {
+						if(response) {
 						let metadata = response;                
 						let tokens721 = app.state.tokens721;
 
