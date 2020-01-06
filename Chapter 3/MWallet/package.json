@@ -3,16 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bip39": "^3.0.2",
     "bulma-start": "0.0.2",
+    "ethereumjs-util": "^6.2.0",
+    "hdkey": "^1.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "typescript": "^3.4.0",
-    "web3": "^1.0.0-beta.52",
-    "bip39": "^3.0.2",
-    "ethereumjs-tx": "^2.0.0",
-    "ethereumjs-util": "^6.1.0",
-    "hdkey": "^1.1.1"
+    "react-scripts": "^3.3.0",
+    "typescript": "^3.7.4",
+    "web3": "^1.2.0"
   },
   "scripts": {
     "start": "PORT=8000 react-scripts start",
