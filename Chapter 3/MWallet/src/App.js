@@ -3,7 +3,7 @@ import Web3 from 'web3';
 import Container from './Components/Container';
 import Nav from './Components/Nav';
 import Description from './Components/Description';
-import Mnemonic from './Items/Mnemonic';
+import Mnemonic from './Items/Mnemonic.js';
 const bip39 = require('bip39');
 const hdkey = require('hdkey');
 const ethUtil = require('ethereumjs-util')
