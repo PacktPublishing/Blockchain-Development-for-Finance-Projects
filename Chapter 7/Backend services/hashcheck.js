@@ -61,7 +61,7 @@ var walk = function(dir, done) {
 };
 
 
-async function bWrite (p,d) {
+async function bWrite (pHash,dHash) {
     	
 		try {
 			
@@ -79,7 +79,7 @@ async function bWrite (p,d) {
         await gateway.connect(ccpPath, { wallet, identity: 'user1', discovery: { enabled: true, asLocalhost: true } });
 		const network = await gateway.getNetwork('mychannel');
 		const contract = network.getContract('docsapp');
-		await contract.submitTransaction('addDocHash',p,d);
+		await contract.submitTransaction('addDocHash',pHash,dHash);
         console.log("Transaction Doc has been submitted");
 		await gateway.disconnect();
 
