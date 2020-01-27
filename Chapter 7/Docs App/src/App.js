@@ -55,7 +55,7 @@ startTimer = () =>{
 	if(this.state.tflag == true)
 	{
 	console.log ("Started Timer");
-	this.intervalHandle = setInterval(this.pathCheck,6000);
+	this.intervalHandle = setInterval(this.pathCheck,10000);
 	
  
  	this.setState({
