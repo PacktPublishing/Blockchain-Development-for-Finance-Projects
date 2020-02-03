@@ -85,7 +85,7 @@ pathCheck = () =>{
 	
 
 	
-	fetch('http://localhost:3600/api/hashcheck', {
+	fetch('http://localhost:3600/api/hashread', {
     method: 'POST',
 	headers: {
          'Accept': 'application/json',
@@ -129,7 +129,7 @@ fileCheck = () =>{
 			
 		
 			
-		fetch('http://localhost:3600/api/hashcheck', {
+		fetch('http://localhost:3600/api/hashreadfile', {
     	method: 'POST',
 		headers: {
          'Accept': 'application/json',
@@ -178,7 +178,7 @@ fileCheck = () =>{
         });
 		
 	
-	fetch('http://localhost:3600/api/hashcheck', {
+	fetch('http://localhost:3600/api/hashwrite', {
     method: 'POST',
 	headers: {
          'Accept': 'application/json',
