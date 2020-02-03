@@ -6,7 +6,7 @@
     "bulma-start": "0.0.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "^3.2.0",
+    "react-scripts": "^3.2.0"
       },
   "scripts": {
     "start": "react-scripts start",
