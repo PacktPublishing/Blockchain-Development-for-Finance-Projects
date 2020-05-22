@@ -5,7 +5,7 @@
   "dependencies": {
     "bulma-start": "0.0.2",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react-dom": "^16.4.2",
     "react-scripts": "1.1.4",
     "web3": "^1.2.0"
   },
