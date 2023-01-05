@@ -8,7 +8,7 @@
     "fs": "0.0.1-security",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "5.0.1",
     "stellar-sdk": "^3.0.0",
     "toml": "^3.0.0"
   },
